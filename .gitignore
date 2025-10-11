@@ -1,7 +1,0 @@
-# mdBook build output
-book/book/
-
-# Copied markdown files in book/src (managed by CI)
-book/src/*.md
-!book/src/README.md
-!book/src/SUMMARY.md
