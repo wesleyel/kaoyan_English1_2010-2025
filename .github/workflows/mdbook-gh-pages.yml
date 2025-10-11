@@ -56,10 +56,12 @@ jobs:
             echo
             echo "- [首页](README.md)"
             echo
-            find book/src -maxdepth 1 -type f -name "*.md" ! -name "README.md" ! -name "SUMMARY.md" -printf "%f\n" | LC_ALL=C sort -V | while read base; do
-              title="${base%.md}"
-              echo "- [$title]($base)"
-            done
+            find book/src -maxdepth 1 -type f -name "*.md" ! -name "README.md" ! -name "SUMMARY.md" -printf "%f\n" \
+              | LC_ALL=C sort -V \
+              | while IFS= read -r base; do
+                  title="${base%.md}"
+                  printf -- "- [%s](<%s>)\n" "$title" "$base"
+                done
           } > book/src/SUMMARY.md
 
       - name: Build mdBook
