@@ -1,0 +1,20 @@
+[book]
+title = "考研英语一真题 2010–2025"
+authors = ["wesleyel"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+site-url = "/kaoyan_English1_2010-2025/"
+git-repository-url = "https://github.com/wesleyel/kaoyan_English1_2010-2025"
+git-repository-icon = "fa-github"
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["theme/hardline.css"]
+
+[output.html.fold]
+enable = true
