@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2017 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)</p>
+<p>Could a hug a day keep the doctor away? The answer may be a resounding “yes!”. <span class="long-underline"> 1 </span> helping you feel close and <span class="long-underline"> 2 </span> to people you care about, it turns out that hugs can bring a <span class="long-underline"> 3 </span> of health benefits to your body and mind. Believe it or not, a warm embrace might even help you <span class="long-underline"> 4 </span> getting sick this winter.</p>
+<p>In a recent study <span class="long-underline"> 5 </span> over 400 healthy adults, researchers from Carnegie Mellon University in Pennsylvania examined the effects of perceived social support and the receipt of hugs <span class="long-underline"> 6 </span> the participants’ susceptibility to developing the common cold after being <span class="long-underline"> 7 </span> to the virus. People who perceived greater social support were less likely to come <span class="long-underline"> 8 </span> with a cold, and the researchers <span class="long-underline"> 9 </span> that the stress-reducing effects of hugging <span class="long-underline"> 10 </span> about 32 percent of that beneficial effect. <span class="long-underline"> 11 </span> among those who got a cold, the ones who felt greater social support and received more frequent hugs had less severe <span class="long-underline"> 12 </span>.</p>
+<p>“Hugging protects people who are under stress from the <span class="long-underline"> 13 </span> risk for colds that’s usually <span class="long-underline"> 14 </span> with stress,” notes Sheldon Cohen, a professor of psychology at Carnegie. Hugging “is a marker of intimacy and helps <span class="long-underline"> 15 </span> the feeling that others are there to help <span class="long-underline"> 16 </span> difficulty.”</p>
+<p>Some experts <span class="long-underline"> 17 </span> the stress-reducing, health-related benefits of hugging to the release of oxytocin, often called “the bonding hormone” <span class="long-underline"> 18 </span> it promotes attachment in relationships, including that between mothers and their newborn babies. Oxytocin is made primarily in the central lower part of the brain, and some of it is released into the bloodstream. But some of it <span class="long-underline"> 19 </span> in the brain, where it <span class="long-underline"> 20 </span> mood, behavior and physiology.</p>
+<ol>
+<li>[‌A] Unlike [B] Besides [C] Despite [D] Throughout</li>
+<li>[‌A] connected [B] restricted [C] equal [D] inferior</li>
+<li>[‌A] choice [B] view [C] lesson [D] host</li>
+<li>[‌A] recall [B] forget [C] avoid [D] keep</li>
+<li>[‌A] collecting [B] involving [C] guiding [D] affecting</li>
+<li>[‌A] of [B] in [C] at [D] on</li>
+<li>[‌A] devoted [B] exposed [C] lost [D] attracted</li>
+<li>[‌A] across [B] along [C] down [D] out</li>
+<li>[‌A] calculated [B] denied [C] doubted [D] imagined</li>
+<li>[‌A] served [B] required [C] restored [D] explained</li>
+<li>[‌A] Even [B] Still [C] Rather [D] Thus</li>
+<li>[‌A] defeats [B] symptoms [C] tests [D] errors</li>
+<li>[‌A] minimized [B] highlighted [C] controlled [D] increased</li>
+<li>[‌A] equipped [B] associated [C] presented [D] compared</li>
+<li>[‌A] assess [B] moderate [C] generate [D] record</li>
+<li>[‌A] in the face of [B] in the form of [C] in the way of [D] in the name of</li>
+<li>[‌A] transfer [B] commit [C] attribute [D] return</li>
+<li>[‌A] because [B] unless [C] though [D] until</li>
+<li>[‌A] emerges [B] vanishes [C] remains [D] decreases</li>
+<li>[‌A] experiences [B] combines [C] justifies [D] influences</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions below each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>First two hours, now three hours – this is how far in advance authorities are recommending people show up to catch a domestic flight, at least at some major U.S. airports with increasingly massive security lines.</p>
+<p>Americans are willing to tolerate time-consuming security procedures in return for increased safety. The crash of EgyptAir Flight 804, which terrorists may have downed over the Mediterranean Sea, provides another tragic reminder of why. But demanding too much of air travelers or providing too little security in return undermines public support for the process. And it should: Wasted time is a drag on Americans' economic and private lives, not to mention infuriating.</p>
+<p>Last year, the Transportation Security Administration (TSA) found in a secret check that undercover investigators were able to sneak weapons – both fake and real – past airport security nearly every time they tried. Enhanced security measures since then, combined with a rise in airline travel due to the improving economy and low oil prices, have resulted in long waits at major airports such as Chicago's O'Hare International. It is not yet clear how much more effective airline security has become – but the lines are obvious.</p>
+<p>Part of the issue is that the government did not anticipate the steep increase in airline travel, so the TSA is now rushing to get new screeners on the line. Part of the issue is that airports have only so much room for screening lanes. Another factor may be that more people are trying to overpack their carry-on bags to avoid checked-baggage fees, though the airlines strongly dispute this.</p>
+<p>There is one step the TSA could take that would not require remodeling airports or rushing to hire: Enroll more people in the PreCheck program. PreCheck is supposed to be a win-win for travelers and the TSA. Passengers who pass a background check are eligible to use expedited screening lanes. This allows the TSA to focus on travelers who are higher risk, saving time for everyone involved. The TSA wants to enroll 25 million people in PreCheck.</p>
+<p>It has not gotten anywhere close to that, and one big reason is sticker shock: Passengers must pay $85 every five years to process their background checks. Since the beginning, this price tag has been PreCheck's fatal flaw. Upcoming reforms might bring the price to a more reasonable level. But Congress should look into doing so directly, by helping to finance PreCheck enrollment or to cut costs in other ways.</p>
+<p>The TSA cannot continue diverting resources into underused PreCheck lanes while most of the traveling public suffers in unnecessary lines. It is long past time to make the program work.</p>
+<ol start="21">
+<li>
+<p>The crash of EgyptAir Flight 804 is mentioned to
+[A] explain American's tolerance of current security checks.
+[B] stress the urgency to strengthen security worldwide.
+[C] highlight the necessity of upgrading major U.S. airports.
+[D] emphasize the importance of privacy protection.</p>
+</li>
+<li>
+<p>Which of the following contributes to long waits at major airports?
+[A] New restrictions on carry-on bags.
+[B] The declining efficiency of the TSA.
+[C] An increase in the number of travelers.
+[D] Frequent unexpected secret checks.</p>
+</li>
+<li>
+<p>The word “expedited” (Line 4, Para. 5) is closest in meaning to
+[A] quieter.
+[B] cheaper.
+[C] wider.
+[D] faster.</p>
+</li>
+<li>
+<p>One problem with the PreCheck program is
+[A] a dramatic reduction of its scale.
+[B] its wrongly-directed implementation.
+[C] the government's reluctance to back it.
+[D] an unreasonable price for enrollment.</p>
+</li>
+<li>
+<p>Which of the following would be the best title for the text?
+[A] Less Screening for More Safety
+[B] PreCheck – a Belated Solution
+[C] Getting Stuck in Security Lines
+[D] Underused PreCheck Lanes</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>"The ancient Hawaiians were astronomers,” wrote Queen Liliuokalani, Hawaii's last reigning monarch, in 1897. Star watchers were among the most esteemed members of Hawaiian society. Sadly, all is not well with astronomy in Hawaii today. Protests have erupted over construction of the Thirty Meter Telescope (TMT), a giant observatory that promises to revolutionize humanity's view of the cosmos.</p>
+<p>At issue is the TMT's planned location on Mauna Kea, a dormant volcano worshiped by some Hawaiians as the piko, that connects the Hawaiian Islands to the heavens. But Mauna Kea is also home to some of the world's most powerful telescopes. Rested in the Pacific Ocean, Mauna Kea's peak rises above the bulk of our planet's dense atmosphere, where conditions allow telescopes to obtain images of unsurpassed clarity.</p>
+<p>Opposition to telescopes on Mauna Kea is nothing new. A small but vocal group of Hawaiians and environmentalists have long viewed their presence as disrespect for sacred land and a painful reminder of the occupation of what was once a sovereign nation.</p>
+<p>Some blame for the current controversy belongs to astronomers. In their eagerness to build bigger telescopes, they forgot that science is not the only way of understanding the world. They did not always prioritize the protection of Mauna Kea's fragile ecosystems or its holiness to the island's inhabitants. Hawaiian culture is not a relic of the past; it is a living culture undergoing a renaissance today.</p>
+<p>Yet science has a cultural history, too, with roots going back to the dawn of civilization. The same curiosity to find what lies beyond the horizon that first brought early Polynesians to Hawaii's shores inspires astronomers today to explore the heavens. Calls to disassemble all telescopes on Mauna Kea or to ban future development there ignore the reality that astronomy and Hawaiian culture both seek to answer big questions about who we are, where we come from and where we are going. Perhaps that is why we explore the starry skies, as if answering a primal calling to know ourselves and our true ancestral homes.</p>
+<p>The astronomy community is making compromises to change its use of Mauna Kea. The TMT site was chosen to minimize the telescope's visibility around the island and to avoid archaeological and environmental impact. To limit the number of telescopes on Mauna Kea, old ones will be removed at the end of their lifetimes and their sites returned to a natural state. There is no reason why everyone cannot be welcomed on Mauna Kea to embrace their cultural heritage and to study the stars.</p>
+<ol start="26">
+<li>
+<p>Queen Liliuokalani's remark in Paragraph 1 indicates
+[A] her conservative view on the historical role of astronomy.
+[B] the importance of astronomy in ancient Hawaiian society.
+[C] the regrettable decline of astronomy in ancient times.
+[D] her appreciation of star watchers' feats in her time.</p>
+</li>
+<li>
+<p>Mauna Kea is deemed as an ideal astronomical site due to
+[A] its geographical features.
+[B] its protective surroundings.
+[C] its religious implications.
+[D] its existing infrastructure.</p>
+</li>
+<li>
+<p>The construction of the TMT is opposed by some locals partly because
+[A] it may risk ruining their intellectual life.
+[B] it reminds them of a humiliating history.
+[C] their culture will lose a chance of revival.
+[D] they fear losing control of Mauna Kea.</p>
+</li>
+<li>
+<p>It can be inferred from Paragraph 5 that progress in today's astronomy
+[A] is fulfilling the dreams of ancient Hawaiians.
+[B] helps spread Hawaiian culture across the world.
+[C] may uncover the origin of Hawaiian culture.
+[D] will eventually soften Hawaiians' hostility.</p>
+</li>
+<li>
+<p>The author's attitude toward choosing Mauna Kea as the TMT site is one of
+[A] severe criticism.
+[B] passive acceptance.
+[C] slight hesitancy.
+[D] full approval.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>Robert F. Kennedy once said that a country's GDP measures “everything except that which makes life worthwhile." With Britain voting to leave the European Union, and GDP already predicted to slow as a result, it is now a timely moment to assess what he was referring to.</p>
+<p>The question of GDP and its usefulness has annoyed policymakers for over half a century. Many argue that it is a flawed concept. It measures things that do not matter and misses things that do. By most recent measures, the UK's GDP has been the envy of the Western world, with record low unemployment and high growth figures. If everything was going so well, then why did over 17 million people vote for Brexit, despite the warnings about what it could do to their country's economic prospects?</p>
+<p>A recent annual study of countries and their ability to convert growth into well-being sheds some light on that question. Across the 163 countries measured, the UK is one of the poorest performers in ensuring that economic growth is translated into meaningful improvements for its citizens. Rather than just focusing on GDP, over 40 different sets of criteria from health, education and civil society engagement have been measured to get a more rounded assessment of how countries are performing.</p>
+<p>While all of these countries face their own challenges, there are a number of consistent themes. Yes, there has been a budding economic recovery since the 2008 global crash, but in key indicators in areas such as health and education, major economies have continued to decline. Yet this isn't the case with all countries. Some relatively poor European countries have seen huge improvements across measures including civil society, income equality and the environment.</p>
+<p>This is a lesson that rich countries can learn: When GDP is no longer regarded as the sole measure of a country's success, the world looks very different.</p>
+<p>So, what Kennedy was referring to was that while GDP has been the most common method for measuring the economic activity of nations, as a measure, it is no longer enough. It does not include important factors such as environmental quality or education outcomes – all things that contribute to a person's sense of well-being.
+The sharp hit to growth predicted around the world and in the UK could lead to a decline in the everyday services we depend on for our well-being and for growth. But policymakers who refocus efforts on improving well-being rather than simply worrying about GDP figures could avoid the forecasted doom and may even see progress.</p>
+<ol start="31">
+<li>
+<p>Robert F. Kennedy is cited because he
+[A] praised the UK for its GDP.
+[B] identified GDP with happiness.
+[C] misinterpreted the role of GDP.
+[D] had a low opinion of GDP.</p>
+</li>
+<li>
+<p>It can be inferred from Paragraph 2 that
+[A] the UK is reluctant to remold its economic pattern.
+[B] GDP as the measure of success is widely defied in the UK.
+[C] the UK will contribute less to the world economy.
+[D] policymakers in the UK are paying less attention to GDP.</p>
+</li>
+<li>
+<p>Which of the following is true about the recent annual study?
+[A] It is sponsored by 163 countries.
+[B] It excludes GDP as an indicator.
+[C] Its criteria are questionable.
+[D] Its results are enlightening.</p>
+</li>
+<li>
+<p>In the last two paragraphs, the author suggests that
+[A] the UK is preparing for an economic boom.
+[B] high GDP foreshadows an economic decline.
+[C] it is essential to consider factors beyond GDP.
+[D] it requires caution to handle economic issues.</p>
+</li>
+<li>
+<p>Which of the following is the best title for the text?
+[A] High GDP But Inadequate Well-being, a UK Lesson
+[B] GDP Figures, a Window on Global Economic Health
+[C] Robert F. Kennedy, a Terminator of GDP
+[D] Brexit, the UK's Gateway to Well-being</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>In a rare unanimous ruling, the US Supreme Court has overturned the corruption conviction of a former Virginia governor, Robert McDonnell. But it did so while holding its nose at the ethics of his conduct, which included accepting gifts such as a Rolex watch and a Ferrari automobile from a company seeking access to government.</p>
+<p>The high court's decision said the judge in Mr. McDonnell's trial failed to tell a jury that it must look only at his "official acts," or the former governor's decisions on "specific” and “unsettled” issues related to his duties.</p>
+<p>Merely helping a gift-giver gain access to other officials, unless done with clear intent to pressure those officials, is not corruption, the justices found.</p>
+<p>The court did suggest that accepting favors in return for opening doors is “distasteful” and “nasty.” But under anti-bribery laws, proof must be made of concrete benefits, such as approval of a contract or regulation. Simply arranging a meeting, making a phone call, or hosting an event is not an “official act”.</p>
+<p>The court's ruling is legally sound in defining a kind of favoritism that is not criminal. Elected leaders must be allowed to help supporters deal with bureaucratic problems without fear of prosecution for bribery. “The basic compact underlying representative government,” wrote Chief Justice John Roberts for the court, "assumes that public officials will hear from their constituents and act on their concerns."</p>
+<p>But the ruling reinforces the need for citizens and their elected representatives, not the courts, to ensure equality of access to government. Officials must not be allowed to play favorites in providing information or in arranging meetings simply because an individual or group provides a campaign donation or a personal gift. This type of integrity requires well-enforced laws in government transparency, such as records of official meetings, rules on lobbying, and information about each elected leader's source of wealth.</p>
+<p>Favoritism in official access can fan public perceptions of corruption. But it is not always corruption. Rather officials must avoid double standards, or different types of access for average people and the wealthy. If connections can be bought, a basic premise of democratic society – that all are equal in treatment by government – is undermined. Good governance rests on an understanding of the inherent worth of each individual.</p>
+<p>The court's ruling is a step forward in the struggle against both corruption and official favoritism.</p>
+<ol start="36">
+<li>
+<p>The underlined sentence (Para.1) most probably shows that the court
+[A] avoided defining the extent of McDonnell's duties.
+[B] made no compromise in convicting McDonnell.
+[C] was contemptuous of McDonnell's conduct.
+[D] refused to comment on McDonnell's ethics.</p>
+</li>
+<li>
+<p>According to Paragraph 4, an official act is deemed corruptive only if it involves
+[A] leaking secrets intentionally.
+[B] sizable gains in the form of gifts.
+[C] concrete returns for gift-givers.
+[D] breaking contracts officially.</p>
+</li>
+<li>
+<p>The court's ruling is based on the assumption that public officials are
+[A] justified in addressing the needs of their constituents.
+[B] qualified to deal independently with bureaucratic issues.
+[C] allowed to focus on the concerns of their supporters.
+[D] exempt from conviction on the charge of favoritism.</p>
+</li>
+<li>
+<p>Well-enforced laws in government transparency are needed to
+[A] awaken the conscience of officials.
+[B] guarantee fair play in official access.
+[C] allow for certain kinds of lobbying.
+[D] inspire hopes in average people.</p>
+</li>
+<li>
+<p>The author's attitude toward the court's ruling is
+[A] sarcastic.
+[B] tolerant.
+[C] skeptical.
+[D] supportive.</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> The following paragraphs are given in a wrong order. For questions 41-45, you are required to reorganize these paragraphs into a coherent text by choosing from the list A-G and filling them into the numbered boxes. Paragraphs B and D have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points)</p>
+<p>[A] The first published sketch, “A Dinner at Poplar Walk" brought tears to Dickens's eyes when he discovered it in the pages of <em>The Monthly Magazine</em>. From then on his sketches, which appeared under the pen name “Boz” in <em>The Evening Chronicle</em>, earned him a modest reputation.</p>
+<p>[B] The runaway success of <em>The Pickwick Papers</em>, as it is generally known today, secured Dickens's fame. There were Pickwick coats and Pickwick cigars, and the plump, spectacled hero, Samuel Pickwick, became a national figure.</p>
+<p>[C] Soon after <em>Sketches by Boz</em> appeared, a publishing firm approached Dickens to write a story in monthly installments, as a backdrop for a series of woodcuts by the then-famous artist Robert Seymour, who had originated the idea for the story. With characteristic confidence, Dickens successfully insisted that Seymour's pictures illustrate his own story instead. After the first installment, Dickens wrote to the artist and asked him to correct a drawing Dickens felt was not faithful enough to his prose. Seymour made the change, went into his backyard, and expressed his displeasure by committing suicide. Dickens and his publishers simply pressed on with a new artist. The comic novel, <em>The Posthumous Papers of the Pickwick Club</em>, appeared serially in 1836 and 1837 and was first published in book form in 1837.</p>
+<p>[D] Charles Dickens is probably the best-known and, to many people, the greatest English novelist of the 19th century. A moralist, satirist, and social reformer, Dickens crafted complex plots and striking characters that capture the panorama of English society.</p>
+<p>[E] Soon after his father's release from prison, Dickens got a better job as errand boy in law offices. He taught himself shorthand to get an even better job later as a court stenographer and as a reporter in Parliament. At the same time, Dickens, who had a reporter's eye for transcribing the life around him, especially anything comic or odd, submitted short sketches to obscure magazines.</p>
+<p>[F] Dickens was born in Portsmouth, on England's southern coast. His father was a clerk in the British Navy pay office – a respectable position, but with little social status. His paternal grandparents, a steward and a housekeeper, possessed even less status, having been servants, and Dickens later concealed their background. Dickens's mother supposedly came from a more respectable family. Yet two years before Dickens's birth, his mother's father was caught stealing and fled to Europe, never to return. The family's increasing poverty forced Dickens out of school at age 12 to work in Warren's Blacking Warehouse, a shoe-polish factory, where the other working boys mocked him as "the young gentleman.” His father was then imprisoned for debt. The humiliations of his father's imprisonment and his labor in the blacking factory formed Dickens's greatest wound and became his deepest secret. He could not confide them even to his wife, although they provide the unacknowledged foundation of his fiction.</p>
+<p>[G] After <em>Pickwick</em>, Dickens plunged into a bleaker world. In <em>Oliver Twist</em>, he traces an orphan's progress from the workhouse to the criminal slums of London. <em>Nicholas Nickleby</em>, his next novel, combines the darkness of <em>Oliver Twist</em> with the sunlight of <em>Pickwick</em>. The popularity of these novels consolidated Dickens' as a nationally and internationally celebrated man of letters.</p>
+<p>D → 41. <span class="long-underline">     </span> → 42. <span class="long-underline">     </span> → 43. <span class="long-underline">     </span> → 44. <span class="long-underline">     </span> → B → 45. <span class="long-underline">     </span></p>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Your translation should be written neatly on the ANSWER SHEET. (10 points)</p>
+<p>The growth of the use of English as the world's primary language for international communication has obviously been continuing for several decades. (46) <u>But even as the number of English speakers expands further there are signs that the global predominance of the language may fade within the foreseeable future.</u> Complex international, economic, technological and cultural changes could start to diminish the leading position of English as the language of the world market, and UK interests which enjoy advantage from the breadth of English usage would consequently face new pressures. Those realistic possibilities are highlighted in the study presented by David Graddol. (47) <u>His analysis should therefore end any self-contentedness among those who may believe that the global position of English is so stable that the young generations of the United Kingdom do not need additional language capabilities.</u>
+David Graddol concludes that monoglot English graduates face a bleak economic future as qualified multilingual youngsters from other countries are proving to have a competitive advantage over their British counterparts in global companies and organisations. Alongside that, (48) <u>many countries are introducing English into the primary-school curriculum but British schoolchildren and students do not appear to be gaining greater encouragement to achieve fluency in other languages.</u>
+If left to themselves, such trends will diminish the relative strength of the English language in international education markets as the demand for educational resources in languages, such as Spanish, Arabic or Mandarin grows and international business process outsourcing in other languages such as Japanese, French and German, spreads.
+(49) <u>The changes identified by David Graddol all present clear and major challenges to the UK's providers of English language teaching to people of other countries and to broader education business sectors.</u> The English language teaching sector directly earns nearly £ 1.3 billion for the UK in invisible exports and our other education related exports earn up to £ 10 billion a year more. As the international education market expands, the recent slowdown in the numbers of international students studying in the main English-speaking countries is likely to continue, especially if there are no effective strategic policies to prevent such slippage.
+The anticipation of possible shifts in demand provided by this study is significant: (50) <u>It gives a basis to all organisations which seek to promote the learning and use of English, a basis for planning to meet the possibilities of what could be a very different operating environment.</u> That is a necessary and practical approach. In this as in much else, those who wish to influence the future must prepare for it.</p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong>
+You are to write an email to James Cook, a newly-arrived Australian professor, recommending some tourist attractions in your city. Please give reasons for your recommendation.
+You should write neatly on the ANSWER SHEET.
+Do not sign your own name at the end of the email. Use “Li Ming” instead.
+Do not write the address. (10 points)</p>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong>
+Write an essay of 160-200 words based on the following pictures. In your essay, you should</p>
+<ol>
+<li>describe the pictures briefly,</li>
+<li>interpret the meaning, and</li>
+<li>give your comments.
+You should write neatly on the ANSWER SHEET. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The image is titled "“有书”与“读书”" ("Having Books" vs. "Reading Books"). It presents two contrasting scenes.
+In the first picture on the left, a man is comfortably reclined in a chair, surrounded by towering bookshelves filled with numerous books. He boasts, "我有这么多书" (I have so many books), signifying pride in the mere possession of a large collection.
+In the second picture on the right, another person is actively engaged in reading at a desk. There are a few books on the desk, and the person has a determined thought bubble that says, "我争取今年读完20本书" (I'll strive to finish reading 20 books this year), highlighting the importance of the act of reading and setting tangible goals for it, rather than just owning books.
+The overall message contrasts the passive ownership of knowledge with the active pursuit and acquisition of it.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2016 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2018 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2016 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2018 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

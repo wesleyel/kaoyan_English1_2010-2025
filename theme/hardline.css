@@ -1,0 +1,30 @@
+/* Render soft line breaks as visible line breaks without affecting code blocks */
+.content .chapter p,
+.content .chapter li,
+.content .chapter td,
+.content .chapter th,
+.content .chapter dd,
+.content .chapter blockquote {
+  white-space: pre-line;
+}
+
+/* Preserve code blocks exactly */
+.content .chapter pre {
+  white-space: pre;
+}
+
+/* Inline code typically should wrap long lines but keep spaces; adjust if needed */
+.content .chapter code {
+  white-space: pre-wrap;
+}
+
+/* Style for numbered blank spaces in fill-in exercises */
+.long-underline {
+  display: inline-block;
+  min-width: 2em;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding: 0 0.3em;
+  margin: 0 0.2em;
+  font-weight: bold;
+}

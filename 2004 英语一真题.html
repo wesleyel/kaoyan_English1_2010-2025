@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2004 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on ANSWER SHEET 1. (10 points)</p>
+<p>Many theories concerning the causes of juvenile delinquency (crimes committed by young people) focus either on the individual or on society as the major contributing influence. Theories  <span class="long-underline">1</span> on the individual suggest that children engage in criminal behavior  <span class="long-underline">2</span> they were not sufficiently penalized for previous misdeeds or that they have learned criminal behavior through  <span class="long-underline">3</span> with others. Theories focusing on the role of society suggest that children commit crimes in  <span class="long-underline">4</span> to their failure to rise above their socioeconomic status,  <span class="long-underline">5</span> as a rejection of middle-class values.</p>
+<p>Most theories of juvenile delinquency have focused on children from disadvantaged families, _ <span class="long-underline">6</span> the fact that children from wealthy homes also commit crimes. The latter may commit crimes  <span class="long-underline">7</span> lack of adequate parental control. All theories, however, are tentative and are  <span class="long-underline">8</span> to criticism.</p>
+<p>Changes in the social structure may indirectly  <span class="long-underline">9</span> juvenile crime rates. For example, changes in the economy that  <span class="long-underline">10</span> to fewer job opportunities for youth and rising unemployment  <span class="long-underline">11</span> make gainful employment increasingly difficult to obtain. The resulting discontent may in  <span class="long-underline">12</span> lead more youths into criminal behavior.</p>
+<p>Families have also  <span class="long-underline">13</span> changes these years. More families consist of one-parent households or two working parents;  <span class="long-underline">14</span> ，children are likely to have less supervision at home  <span class="long-underline">15</span> was common in the traditional family  <span class="long-underline">16</span> . This lack of parental supervision is thought to be an influence on juvenile crime rates. Other __<span class="long-underline">17</span> causes of offensive acts include frustration or failure in school, the increased __ <span class="long-underline">18</span> of drugs and alcohol, and the growing  <span class="long-underline">19</span> of child abuse and child neglect. All these conditions tend to increase the probability of a child committing a criminal act,  <span class="long-underline">20</span> a direct causal relationship has not yet been established.</p>
+<ol>
+<li>[A] acting [B] relying [C] centering [D] commenting</li>
+<li>[A] before [B] unless [C] until [D] because</li>
+<li>[A] interaction [B] assimilation [C] cooperation [D] consultation</li>
+<li>[A] return [B] reply [C] reference [D] response</li>
+<li>[A] or [B] but rather [C] but [D] or else</li>
+<li>[A] considering [B] ignoring [C] highlighting [D] discarding</li>
+<li>[A] on [B] in [C] for [D] with</li>
+<li>[A] immune [B] resistant [C] sensitive [D] subject</li>
+<li>[A] affect [B] reduce [C] chock [D] reflect</li>
+<li>[A] point [B] lead [C] come [D] amount</li>
+<li>[A] in general [B] on average [C] by contrast [D] at length</li>
+<li>[A] case [B] short [C] turn [D] essence</li>
+<li>[A] survived [B] noticed [C] undertaken [D] experienced</li>
+<li>[A] contrarily [B] consequently [C] similarly [D] simultaneously</li>
+<li>[A] than [B] that [C] which [D] as</li>
+<li>[A] system [B] structure [C] concept [D] heritage</li>
+<li>[A] assessable [B] identifiable [C] negligible [D] incredible</li>
+<li>[A] expense [B] restriction [C] allocation [D] availability</li>
+<li>[A] incidence [B] awareness [C] exposure [D] popularity</li>
+<li>[A] provided [B] since [C] although [D] supposing</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions below each text by choosing [A], [B], [C] or [D]. Mark your answers on ANSWER SHEET 1. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>Hunting for a job late last year, lawyer Gant Redmon stumbled across CareerBuilder, a job database on the Internet. He searched it with no success but was attracted by the site’s “personal search agent”. It’s an interactive feature that lets visitors key in job criteria such as location, title, and salary, then E-mails them when a matching position is posted in the database. Redmon chose the keywords legal, intellectual property and Washington, D.C. Three weeks later, he got his first notification of an opening. “I struck gold,” says Redmon, who E-mailed his resume to the employer and won a position as in-house counsel for a company.</p>
+<p>With thousands of career-related sites on the Internet, finding promising openings can he time-consuming and inefficient. Search agents reduce the need for repeated visits to the databases. But although a search agent worked for Redmon, career experts see drawbacks. Narrowing your criteria, for example, may work against you: “Every time you answer a question you eliminate a possibility,” says one expert.</p>
+<p>For any job search, you should start with a narrow concept—what you think you want to do—then broaden it. “None of these programs do that,” says another expert. “There’s no career counseling implicit in all of this.” Instead, the best strategy is to use the agent as a kind of tip service to keep abreast of jobs in a particular database; when you get E-mail, consider it a reminder to check the database again. “I would not rely on agents for finding everything that is added to a database that might interest me,” says the author of a job-searching guide.</p>
+<p>Some sites design their agents to tempt job hunters to return. When CareerSite’s agent sends out messages to those who have signed up for its service, for example, it includes only three potential jobs—those it considers the best matches. There may be more matches in the database; job hunters will have to visit the site again to find them—and they do. “On the day after we send our messages, we see a sharp increase in our traffic,” says Seth Peets, vice president of marketing for CareerSite.</p>
+<p>Even those who aren’t hunting for jobs may find search agents worthwhile. Some use them to keep a close watch on the demand for their line of work or gather information on compensation to arm themselves when negotiating for a raise. Although happily employed, Redmon maintains his agent at CareerBuilder. “You always keep your eyes open,” he says. Working with a personal search agent means having another set of eyes looking out for you.</p>
+<ol start="21">
+<li>
+<p>How did Redmon find his job?
+[A] By searching openings in a job database.
+[B] By posting a matching position in a database.
+[C] By using a special service of a database.
+[D] By E-mailing his resume to a database.</p>
+</li>
+<li>
+<p>Which of the following can be a disadvantage of search agents?
+[A] Lack of counseling.
+[B] Limited number of visits.
+[C] Lower efficiency.
+[D] Fewer successful matches.</p>
+</li>
+<li>
+<p>The expression “tip service” (Line 4, Paragraph 3) most probably means .
+[A] advisory.
+[B] compensation.
+[C] interaction.
+[D] reminder.</p>
+</li>
+<li>
+<p>Why does CareerSite’s agent offer each job hunter only three job options?
+[A] To focus on better job matches.
+[B] To attract more returning visits.
+[C] To reserve space for more messages.
+[D] To increase the rate of success.</p>
+</li>
+<li>
+<p>Which of the following is true according to the text?
+[A] Personal search agents are indispensable to job-hunters.
+[B] Some sites keep E-mailing job seekers to trace their demands.
+[C] Personal search agents are also helpful to those already employed.
+[D] Some agents stop sending information to people once they are employed.</p>
+</li>
+</ol>
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>Over the past century, all kinds of unfairness and discrimination have been condemned or made illegal. But one insidious form continues to thrive: alphabetism. This, for those as yet unaware of such a disadvantage, refers to discrimination against those whose surnames begin with a letter in the lower half of the alphabet.</p>
+<p>It has long been known that a taxi firm called AAAA cars has a big advantage over Zodiac cars when customers thumb through their phone directories. Less well known is the advantage that Adam Abbott has in life over Zoë Zysman. English names are fairly evenly spread between the halves of the alphabet. Yet a suspiciously large number of top people have surnames beginning with letters between A and K.</p>
+<p>Thus the American president and vice-president have surnames starting with B and C respectively; and 26 of George Bush’s predecessors (including his father) had surnames in the first half of the alphabet against just 16 in the second half. Even more striking, six of the seven heads of government of the G7 rich countries are alphabetically advantaged (Berlusconi, Blair, Bush, Chirac, Chrétien and Koizumi). The world’s three top central bankers (Greenspan, Duisenberg and Hayami) are all close to the top of the alphabet, even if one of them really uses Japanese characters. As are the world's five richest men (Gates, Buffett, Allen, Ellison and Albrecht).</p>
+<p>Can this merely be coincidence? One theory, dreamt up in all the spare time enjoyed by the alphabetically disadvantaged, is that the rot sets in early. At the start of the first year in infant school, teachers seat pupils alphabetically from the front, to make it easier to remember their names. So short-sighted Zysman junior gets stuck in the back row, and is rarely asked the improving questions posed by those insensitive teachers. At the time the alphabetically disadvantaged may think they have had a lucky escape. Yet the result may be worse qualifications, because they get less individual attention, as well as less confidence in speaking publicly.</p>
+<p>The humiliation continues. At university graduation ceremonies, the ABCs proudly get their awards first; by the time they reach the Zysmans most people are literally having a ZZZ. Shortlists for job interviews, election ballot papers, lists of conference speakers and attendees: all tend to be drawn up alphabetically, and their recipients lose interest as they plough through them.</p>
+<ol start="26">
+<li>
+<p>What does the author intend to illustrate with AAAA cars and Zodiac cars?
+[A] A kind of overlooked inequality.
+[B] A type of conspicuous bias.
+[C] A type of personal prejudice.
+[D] A kind of brand discrimination.</p>
+</li>
+<li>
+<p>What can we infer from the first three paragraphs?
+[A] In both East and West, names are essential to success.
+[B] The alphabet is to blame for the failure of Zoë Zysman.
+[C] Customers often pay a lot of attention to companies’ names.
+[D] Some form of discrimination is too subtle to recognize.</p>
+</li>
+<li>
+<p>The 4th paragraph suggests that .
+[A] questions are often put to the more intelligent students
+[B] alphabetically disadvantaged students often escape from class
+[C] teachers should pay attention to all of their students
+[D] students should be seated according to their eyesight</p>
+</li>
+<li>
+<p>What does the author mean by “most people are literally having a ZZZ” (Lines 2-3, Paragraph 5)?
+[A] They are getting impatient.
+[B] They are noisily dozing off.
+[C] They are feeling humiliated.
+[D] They are busy with word puzzles.</p>
+</li>
+<li>
+<p>Which of the following is true according to the text?
+[A] People with surnames beginning with N to Z are often ill-treated.
+[B] VIPs in the Western world gain a great deal from alphabetism.
+[C] The campaign to eliminate alphabetism still has a long way to go.
+[D] Putting things alphabetically may lead to unintentional bias.</p>
+</li>
+</ol>
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>When it comes to the slowing economy, Ellen Spero isn't biting her nails just yet. But the 47-year-old manicurist isn't cutting, filing or polishing as many nails as she'd like to, either. Most of her clients spend $12 to $50 weekly, but last month two longtime customers suddenly stopped showing up. Spero blames the softening economy. “I'm a good economic indicator,” she says. “I provide a service that people can do without when they're concerned about saving some dollars.” So Spero is downscaling, shopping at middle-brow Dillard's department store near her suburban Cleveland home, instead of Neiman Marcus. “I don't know if other clients are going to abandon me, too,” she says.</p>
+<p>Even before Alan Greenspan's admission that America's red-hot economy is cooling, lots of working folks had already seen signs of the slowdown themselves. From car dealerships to Gap outlets, sales have been lagging for months as shoppers temper their spending. For retailers, who last year took in 24 percent of their revenue between Thanksgiving and Christmas, the cautious approach is coming at a crucial time. Already, experts say, holiday sales are off 7 percent from last year's pace. But don't sound any alarms just yet. Consumers seem only mildly concerned, not panicked, and many say they remain optimistic about the economy's long-term prospects even as they do some modest belt-tightening.</p>
+<p>Consumers say they're not in despair because, despite the dreadful headlines, their own fortunes still feel pretty good. Home prices are holding steady in most regions. In Manhattan, “there's a new gold rush happening in the $4 million to $10 million range, predominantly fed by Wall Street bonuses,” says broker Barbara Corcoran. In San Francisco, prices are still rising even as frenzied overbidding quiets. “Instead of 20 to 30 offers, now maybe you only get two or three," says John Tealdi, a Bay Area real-estate broker. And most folks still feel pretty comfortable about their ability to find and keep a job.</p>
+<p>Many folks see silver linings to this slowdown. Potential home buyers would cheer for lower interest rates. Employers wouldn't mind a little fewer bubbles in the job market. Many consumers seem to have been influenced by stock-market swings, which investors now view as a necessary ingredient to a sustained boom. Diners might see an upside, too. Getting a table at Manhattan's hot new Alain Ducasse restaurant used to be impossible. Not anymore. For that, Greenspan &amp; Co. may still be worth toasting.</p>
+<ol start="31">
+<li>
+<p>By “Ellen Spero isn’t biting her nails just yet” (Line 1, Paragraph 1), the author means_____.
+[A] Spero can hardly maintain her business.
+[B] Spero is too much engaged in her work.
+[C] Spero has grown out of her bad habit.
+[D] Spero is not in a desperate situation.</p>
+</li>
+<li>
+<p>How do the public feel about the current economic situation?
+[A] Optimistic.
+[B] Confused.
+[C] Carefree.
+[D] Panicked.</p>
+</li>
+<li>
+<p>When mentioning “the $4 million to $10 million range”(Lines 3, Paragraph 3), the author is talking about _______
+[A] gold market.
+[B] real estate.
+[C] stock exchange.
+[D] venture investment.</p>
+</li>
+<li>
+<p>Why can many people see “silver linings” to the economic slowdown?
+[A] They would benefit in certain ways.
+[B] The stock market shows signs of recovery.
+[C] Such a slowdown usually precedes a boom.
+[D] The purchasing power would be enhanced.</p>
+</li>
+<li>
+<p>To which of the following is the author likely to agree?
+[A] A new boom, on the horizon.
+[B] Tighten the belt, the single remedy.
+[C] Caution all right, panic not.
+[D] The more ventures, the more chances.</p>
+</li>
+</ol>
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>Americans today don't place a very high value on intellect. Our heroes are athletes, entertainers, and entrepreneurs, not scholars. Even our schools are where we send our children to get a practical education—not to pursue knowledge for the sake of knowledge. Symptoms of pervasive anti-intellectualism in our schools aren't difficult to find.</p>
+<p>“Schools have always been in a society where practical is more important than intellectual,” says education writer Diane Ravitch. “Schools could be a counterbalance.” Ravitch's latest book. Left Back: A Century of Failed School Reforms, traces the roots of anti-intellectualism in our schools, concluding they are anything but a counterbalance to the American distaste for intellectual pursuits.</p>
+<p>But they could and should be. Encouraging kids to reject the life of the mind leaves them vulnerable to exploitation and control. Without the ability to think critically, to defend their ideas and understand the ideas of others, they cannot fully participate in our democracy. Continuing along this path, says writer Earl Shorris, “We will become a second-rate country. We will have a less civil society.”</p>
+<p>“Intellect is resented as a form of power or privilege,” writes historian and professor Richard Hofstadter in Anti-intellectualism in American Life, a Pulitzer-Prize winning book on the roots of anti-intellectualism in US politics, religion, and education. From the beginning of our history, says Hofstadter, our democratic and populist urges have driven us to reject anything that smells of elitism. Practicality, common sense, and native intelligence have been considered more noble qualities than anything you could learn from a book.</p>
+<p>Ralph Waldo Emerson and other Transcendentalist philosophers thought schooling and rigorous book learning put unnatural restraints on children: “We are shut up in schools and college recitation rooms for 10 or 15 years and come out at last with a bellyful of words and do not know a thing.”Mark Twain's Huckleberry Finn exemplified American anti-intellectualism. Its hero avoids being civilized—going to school and learning to read—so he can preserve his innate goodness.</p>
+<p>Intellect, according to Hofstadter, is different from native intelligence, a quality we reluctantly admire. Intellect is the critical, creative, and contemplative side of the mind. Intelligence seeks to grasp, manipulate, re-order, and adjust, while intellect examines, ponders, wonders, theorizes, criticizes, and imagines.</p>
+<p>School remains a place where intellect is mistrusted. Hofstadter says our country's educational system is in the grips of people who “joyfully and militantly proclaim their hostility to intellect and their eagerness to identify with children who show the least intellectual promise.”</p>
+<ol start="36">
+<li>
+<p>What do American parents expect their children to acquire in school?
+[A] The habit of thinking independently.
+[B] Profound knowledge of the world.
+[C] Practical abilities for future career.
+[D] The confidence in intellectual pursuits.</p>
+</li>
+<li>
+<p>We can learn from the text that Americans have a history of________.
+[A] undervaluing intellect.
+[B] favoring intellectualism.
+[C] supporting school reform.
+[D] suppressing native intelligence.</p>
+</li>
+<li>
+<p>The views of Raviteh and Emerson on schooling are ______.
+[A] identical.
+[B] similar.
+[C] complementary.
+[D] opposite.</p>
+</li>
+<li>
+<p>Emerson, according to the text, is probably _________.
+[A] a pioneer of education reform.
+[B] an opponent of intellectualism.
+[C] a scholar in favor of intellect.
+[D] an advocate of regular schooling.</p>
+</li>
+<li>
+<p>What does the author think of intellect?
+[A] It is second to intelligence.
+[B] It evolves from common sense.
+[C] It is to be pursued.
+[D] It underlies power</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Your translation should be written clearly on ANSWER SHEET 2. (10 points)</p>
+<p>The relation of language and mind has interested philosophers for many centuries. (41) <u>The Greeks assumed that the structure of language had some connection with the process of thought, which took root in Europe long before people realized how diverse languages could be.</u></p>
+<p>Only recently did linguists begin the serious study of languages that were very different from their own. Two anthropologist-linguists, Franz Boas and Edward Sapir, were pioneers in describing many native languages of North and South America during the first half of the twentieth century. (42) <u>We are obliged to them because some of these languages have since vanished, as the peoples who spoke them died out or became assimilated and lost their native languages.</u> Other linguists in the earlier part of this century, however, who were less eager to deal with bizarre data from “exotic” language, were not always so grateful. (43) <u>The newly described languages were often so strikingly different from the well studied languages of Europe and Southeast Asia that some scholars even accused Boas and Sapir of fabricating their data.</u> Native American languages are indeed different, so much so in fact that Navajo could be used by the US military as a code during World War II to send secret messages.</p>
+<p>Sapir’s pupil, Benjamin Lee Whorf, continued the study of American Indian languages. (44) <u>Being interested in the relationship of language and thought, Whorf developed the idea that the structure of language determines the structure of habitual thought in a society.</u> He reasoned that because it is easier to formulate certain concepts and not others in a given language, the speakers of that language think along one track and not along another. (45) <u>Whorf came to believe in a sort of linguistic determinism which, in its strongest form, states that language imprisons the mind, and that the grammatical patterns in a language can produce far-reaching consequences for the culture of a society.</u> Later, this idea became to be known as the Sapir-Whorf hypothesis, but this term is somewhat inappropriate. Although both Sapir and Whorf emphasized the diversity of languages, Sapir himself never explicitly supported the notion of linguistic determinism.</p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<p><strong>46. Directions:</strong></p>
+<p>Study the following drawing carefully and write an essay in which you should</p>
+<ol>
+<li>describe the drawing，</li>
+<li>interpret its meaning, and</li>
+<li>support your view with examples.</li>
+</ol>
+<p>You should write about 200 words neatly on ANSWER SHEET 2 (20 points)</p>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The picture depicts a young man crossing a finish line. An arrow on the ground pointing towards the finish line is labeled "End Point," while an arrow leading away from the finish line is labeled "Start Point."</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2003 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2005 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2003 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2005 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

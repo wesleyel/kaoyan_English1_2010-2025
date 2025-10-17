@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2016 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>好的，这是2016年全国硕士研究生招生考试英语（一）试卷的Markdown转换版本。内容已按照您的要求格式化。</p>
+<hr />
+<h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)</p>
+<p>In Cambodia, the choice of a spouse is a complex one for the young male. It may involve not only his parents and his friends, <span class="long-underline"> 1 </span> those of the young woman, but also a matchmaker. A young man can <span class="long-underline"> 2 </span> a likely spouse on his own and then ask his parents to <span class="long-underline"> 3 </span> the marriage negotiations, or the young man’s parents may make the choice of a spouse, giving the child little to say in the selection. <span class="long-underline"> 4 </span>, a girl may veto the spouse her parents have chosen. <span class="long-underline"> 5 </span> a spouse has been selected, each family investigates the other to make sure its child is marrying <span class="long-underline"> 6 </span> a good family.</p>
+<p>The traditional wedding is a long and colorful affair. Formerly it lasted three days, <span class="long-underline"> 7 </span> by the 1980s it more commonly lasted a day and a half. Buddhist priests offer a short sermon and <span class="long-underline"> 8 </span> prayers of blessing. Parts of the ceremony involve ritual hair cutting, <span class="long-underline"> 9 </span> cotton threads soaked in holy water around the bride's and groom's wrists, and <span class="long-underline"> 10 </span> a candle around a circle of happily married and respected couples to bless the <span class="long-underline"> 11 </span>. Newlyweds traditionally move in with the wife's parents and may <span class="long-underline"> 12 </span> with them up to a year, <span class="long-underline"> 13 </span> they can build a new house nearby.</p>
+<p>Divorce is legal and easy to <span class="long-underline"> 14 </span>, but not common. Divorced persons are <span class="long-underline"> 15 </span> with some disapproval. Each spouse retains <span class="long-underline"> 16 </span> property he or she <span class="long-underline"> 17 </span> into the marriage, and jointly-acquired property is <span class="long-underline"> 18 </span> equally. Divorced persons may remarry, but a gender prejudice <span class="long-underline"> 19 </span> up: The divorced male doesn't have a waiting period before he can remarry <span class="long-underline"> 20 </span> the woman must wait ten months.</p>
+<ol>
+<li>[A] as well as [B] by way of [C] on behalf of [D] with regard to</li>
+<li>[A] adapt to [B] provide for [C] compete with [D] decide on</li>
+<li>[A] renew [B] close [C] arrange [D] postpone</li>
+<li>[A] In theory [B] In time [C] Above all [D] For example</li>
+<li>[A] Although [B] Lest [C] After [D] Unless</li>
+<li>[A] within [B] into [C] from [D] through</li>
+<li>[A] since [B] or [C] so [D] but</li>
+<li>[A] test [B] recite [C] copy [D] create</li>
+<li>[A] folding [B] piling [C] wrapping [D] tying</li>
+<li>[A] passing [B] lighting [C] hiding [D] serving</li>
+<li>[A] association [B] meeting [C] collection [D] union</li>
+<li>[A] grow [B] part [C] live [D] deal</li>
+<li>[A] whereas [B] until [C] for [D] if</li>
+<li>[A] follow [B] obtain [C] challenge [D] avoid</li>
+<li>[A] isolated [B] persuaded [C] viewed [D] exposed</li>
+<li>[A] whatever [B] however [C] whenever [D] wherever</li>
+<li>[A] changed [B] brought [C] shaped [D] pushed</li>
+<li>[A] withdrawn [B] invested [C] donated [D] divided</li>
+<li>[A] clears [B] shows [C] warms [D] breaks</li>
+<li>[A] while [B] once [C] so that [D] in that</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions below each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>France, which prides itself as the global innovator of fashion, has decided its fashion industry has lost an absolute right to define physical beauty for women. Its lawmakers gave preliminary approval last week to a law that would make it a crime to employ ultra-thin models on runways. The parliament also agreed to ban websites that “incite excessive thinness” by promoting extreme dieting.</p>
+<p>Such measures have a couple of uplifting motives. They suggest beauty should not be defined by looks that end up impinging on health. That's a start. And the ban on ultra-thin models seems to go beyond protecting models from starving themselves to death – as some have done. It tells the fashion industry that it must take responsibility for the signal it sends women, especially teenage girls, about the social tape-measure they must use to determine their individual worth.</p>
+<p>The bans, if fully enforced, would suggest to women (and many men) that they should not let others be arbiters of their beauty. And perhaps faintly, they hint that people should look to intangible qualities like character and intellect rather than dieting their way to size zero or wasp-waist physiques.</p>
+<p>The French measures, however, rely too much on severe punishment to change a culture that still regards beauty as skin-deep – and bone-showing. Under the law, using a fashion model that does not meet a government-defined index of body mass could result in a $85,000 fine and six months in prison.</p>
+<p>The fashion industry knows it has an inherent problem in focusing on material adornment and idealized body types. In Denmark, the United States, and a few other countries, it is trying to set voluntary standards for models and fashion images that rely more on peer pressure for enforcement.</p>
+<p>In contrast to France's actions, Denmark's fashion industry agreed last month on rules and sanctions regarding the age, health, and other characteristics of models. The newly revised Danish Fashion Ethical Charter clearly states: “We are aware of and take responsibility for the impact the fashion industry has on body ideals, especially on young people.” The charter's main tool of enforcement is to deny access for designers and modeling agencies to Copenhagen Fashion Week (CFW), which is run by the Danish Fashion Institute. But in general it relies on a name-and-shame method of compliance.</p>
+<p>Relying on ethical persuasion rather than law to address the misuse of body ideals may be the best step. Even better would be to help elevate notions of beauty beyond the material standards of a particular industry.</p>
+<ol start="21">
+<li>
+<p>According to the first paragraph, what would happen in France?
+[A] Physical beauty would be redefined.
+[B] New runways would be constructed.
+[C] Websites about dieting would thrive.
+[D] The fashion industry would decline.</p>
+</li>
+<li>
+<p>The phrase “impinging on” (Line 2, Para. 2) is closest in meaning to
+[A] indicating the state of.
+[B] heightening the value of.
+[C] losing faith in.
+[D] doing harm to.</p>
+</li>
+<li>
+<p>Which of the following is true of the fashion industry?
+[A] The French measures have already failed.
+[B] Its inherent problems are getting worse.
+[C] Models are no longer under peer pressure.
+[D] New standards are being set in Denmark.</p>
+</li>
+<li>
+<p>A designer is most likely to be rejected by CFW for
+[A] pursuing perfect physical conditions.
+[B] caring too much about models' character.
+[C] showing little concern for health factors.
+[D] setting a high age threshold for models.</p>
+</li>
+<li>
+<p>Which of the following may be the best title of the text?
+[A] The Great Threats to the Fashion Industry
+[B] Just Another Round of Struggle for Beauty
+[C] A Dilemma for the Starving Models in France
+[D] A Challenge to the Fashion Industry's Body Ideals</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>For the first time in history more people live in towns than in the country. In Britain this has had a curious result. While polls show Britons rate “the countryside" alongside the royal family, Shakespeare and the National Health Service (NHS) as what makes them proudest of their country, this has limited political support.</p>
+<p>A century ago Octavia Hill launched the National Trust not to rescue stylish houses but to save “the beauty of natural places for everyone forever." It was specifically to provide city dwellers with spaces for leisure where they could experience "a refreshing air.” Hill's pressure later led to the creation of national parks and green belts. They don't make countryside any more, and every year concrete consumes more of it. It needs constant guardianship.</p>
+<p>At the next election none of the big parties seem likely to endorse this sentiment. The Conservatives' planning reform explicitly gives rural development priority over conservation, even authorising “off-plan" building where local people might object. The concept of sustainable development has been defined as profitable. Labour likewise wants to discontinue local planning where councils oppose development. The Liberal Democrats are silent. Only Ukip, sensing its chance, has sided with those pleading for a more considered approach to using green land. Its Campaign to Protect Rural England struck terror into many local Conservative parties.</p>
+<p>The sensible place to build new houses, factories and offices is where people are, in cities and towns where infrastructure is in place. The London agents Stirling Ackroyd recently identified enough sites for half a million houses in the London area alone, with no intrusion on green belt. What is true of London is even truer of the provinces.</p>
+<p>The idea that “housing crisis" equals “concreted meadows” is pure lobby talk. The issue is not the need for more houses but, as always, where to put them. Under lobby pressure, George Osborne favours rural new-build against urban renovation and renewal. He favours out-of-town shopping sites against high streets. This is not a free market but a biased one. Rural towns and villages have grown and will always grow. They do so best where building sticks to their edges and respects their character. We do not ruin urban conservation areas. Why ruin rural ones?</p>
+<p>Development should be planned, not let rip. After the Netherlands, Britain is Europe's most crowded country. Half a century of town and country planning has enabled it to retain an enviable rural coherence, while still permitting low-density urban living. There is no doubt of the alternative – the corrupted landscapes of southern Portugal, Spain or Ireland. Avoiding this rather than promoting it should unite the left and right of the political spectrum.</p>
+<ol start="26">
+<li>
+<p>Britain's public sentiment about the countryside
+[A] is not well reflected in politics.
+[B] is fully backed by the royal family.
+[C] didn't start till the Shakespearean age.
+[D] has brought much benefit to the NHS.</p>
+</li>
+<li>
+<p>According to Paragraph 2, the achievements of the National Trust are now being
+[A] largely overshadowed.
+[B] properly protected.
+[C] effectively reinforced.
+[D] gradually destroyed.</p>
+</li>
+<li>
+<p>Which of the following can be inferred from Paragraph 3?
+[A] Labour is under attack for opposing development.
+[B] The Conservatives may abandon “off-plan” building.
+[C] Ukip may gain from its support for rural conservation.
+[D] The Liberal Democrats are losing political influence.</p>
+</li>
+<li>
+<p>The author holds that George Osborne's preference
+[A] shows his disregard for the character of rural areas.
+[B] stresses the necessity of easing the housing crisis.
+[C] highlights his firm stand against lobby pressure.
+[D] reveals a strong prejudice against urban areas.</p>
+</li>
+<li>
+<p>In the last paragraph, the author shows his appreciation of
+[A] the size of population in Britain.
+[B] the enviable urban lifestyle in Britain.
+[C] the town-and-country planning in Britain.
+[D] the political life in today's Britain.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>"There is one and only one social responsibility of business," wrote Milton Friedman, a Nobel prize-winning economist, “That is, to use its resources and engage in activities designed to increase its profits." But even if you accept Friedman's premise and regard corporate social responsibility (CSR) policies as a waste of shareholders' money, things may not be absolutely clear-cut. New research suggests that CSR may create monetary value for companies – at least when they are prosecuted for corruption.</p>
+<p>The largest firms in America and Britain together spend more than $15 billion a year on CSR, according to an estimate by EPG, a consulting firm. This could add value to their businesses in three ways. First, consumers may take CSR spending as a “signal” that a company's products are of high quality. Second, customers may be willing to buy a company's products as an indirect way to donate to the good causes it helps. And third, through a more diffuse “halo effect,” whereby its good deeds earn it greater consideration from consumers and others.</p>
+<p>Previous studies on CSR have had trouble differentiating these effects because consumers can be affected by all three. A recent study attempts to separate them by looking at bribery prosecutions under America's Foreign Corrupt Practices Act (FCPA). It argues that since prosecutors do not consume a company's products as part of their investigations, they could be influenced only by the halo effect.</p>
+<p>The study found that, among prosecuted firms, those with the most comprehensive CSR programmes tended to get more lenient penalties. Their analysis ruled out the possibility that it was firms' political influence, rather than their CSR stand, that accounted for the leniency: Companies that contributed more to political campaigns did not receive lower fines.</p>
+<p>In all, the study concludes that whereas prosecutors should only evaluate a case based on its merits, they do seem to be influenced by a company's record in CSR. "We estimate that either eliminating a substantial labour-rights concern, such as child labour, or increasing corporate giving by about 20% results in fines that generally are 40% lower than the typical punishment for bribing foreign officials," says one researcher.</p>
+<p>Researchers admit that their study does not answer the question of how much businesses ought to spend on CSR. Nor does it reveal how much companies are banking on the halo effect, rather than the other possible benefits, when they decide their do-gooding policies. But at least they have demonstrated that when companies get into trouble with the law, evidence of good character can win them a less costly punishment.</p>
+<ol start="31">
+<li>
+<p>The author views Milton Friedman's statement about CSR with
+[A] tolerance.
+[B] skepticism.
+[C] approval.
+[D] uncertainty.</p>
+</li>
+<li>
+<p>According to Paragraph 2, CSR helps a company by
+[A] guarding it against malpractices.
+[B] protecting it from being defamed.
+[C] winning trust from consumers.
+[D] raising the quality of its products.</p>
+</li>
+<li>
+<p>The expression “more lenient” (Para.4) is closest in meaning to
+[A] less controversial.
+[B] more effective.
+[C] more lasting.
+[D] less severe.</p>
+</li>
+<li>
+<p>When prosecutors evaluate a case, a company's CSR record
+[A] has an impact on their decision.
+[B] comes across as reliable evidence.
+[C] increases the chance of being penalized.
+[D] constitutes part of the investigation.</p>
+</li>
+<li>
+<p>Which of the following is true of CSR, according to the last paragraph?
+[A] Its negative effects on businesses are often overlooked.
+[B] The necessary amount of companies' spending on it is unknown.
+[C] Companies' financial capacity for it has been overestimated.
+[D] It has brought much benefit to the banking industry.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>There will eventually come a day when <em>The New York Times</em> ceases to publish stories on newsprint. Exactly when that day will be is a matter of debate. “Sometime in the future," the paper's publisher said back in 2010.</p>
+<p>Nostalgia for ink on paper and the rustle of pages aside, there's plenty of incentive to ditch print. The infrastructure required to make a physical newspaper – printing presses, delivery trucks – isn't just expensive; it's excessive at a time when online-only competitors don't have the same set of financial constraints. Readers are migrating away from print anyway. And though print ad sales still dwarf their online and mobile counterparts, revenue from print is still declining.
+Overhead may be high and circulation lower, but rushing to eliminate its print edition would be a mistake, says BuzzFeed CEO Jonah Peretti.</p>
+<p>Peretti says the <em>Times</em> shouldn't waste time getting out of the print business, but only if they go about doing it the right way. “Figuring out a way to accelerate that transition would make sense for them,” he said, “but if you discontinue it, you're going to have your most loyal customers really upset with you."</p>
+<p>Sometimes that's worth making a change anyway. Peretti gives the example of Netflix discontinuing its DVD-mailing service to focus on streaming. “It was seen as a blunder,” he said. The move turned out to be foresighted. And if Peretti were in charge at the <em>Times</em>? "I wouldn't pick a year to end print," he said. “I would raise prices and make it into more of a legacy product."</p>
+<p>The most loyal customers would still get the product they favor, the idea goes, and they'd feel like they were helping sustain the quality of something they believe in. "So if you're overpaying for print, you could feel like you were helping," Peretti said. “Then increase it at a higher rate each year and essentially try to generate additional revenue.” In other words, if you're going to make a print product, make it for the people who are already obsessed with it. Which may be what the <em>Times</em> is doing already. Getting the print edition seven days a week costs nearly $500 a year – more than twice as much as a digital-only subscription.</p>
+<p>"It's a really hard thing to do and it's a tremendous luxury that BuzzFeed doesn't have a legacy business,” Peretti remarked. “But we're going to have questions like that where we have things we're doing that don't make sense when the market changes and the world changes. In those situations, it's better to be more aggressive than less aggressive."</p>
+<ol start="36">
+<li>
+<p><em>The New York Times</em> is considering ending its print edition partly due to
+[A] the high cost of operation.
+[B] the increasing online ad sales.
+[C] the pressure from its investors.
+[D] the complaints from its readers.</p>
+</li>
+<li>
+<p>Peretti suggests that, in face of the present situation, the <em>Times</em> should
+[A] end the print edition for good.
+[B] make strategic adjustments.
+[C] seek new sources of readership.
+[D] aim for efficient management.</p>
+</li>
+<li>
+<p>It can be inferred from Paragraphs 5 and 6 that a “legacy product"
+[A] helps restore the glory of former times.
+[B] is meant for the most loyal customers.
+[C] will have the cost of printing reduced.
+[D] expands the popularity of the paper.</p>
+</li>
+<li>
+<p>Peretti believes that, in a changing world,
+[A] traditional luxuries can stay unaffected.
+[B] cautiousness facilitates problem-solving.
+[C] aggressiveness better meets challenges.
+[D] legacy businesses are becoming outdated.</p>
+</li>
+<li>
+<p>Which of the following would be the best title of the text?
+[A] Shift to Online Newspapers All at Once
+[B] Make Your Print Newspaper a Luxury Good
+[C] Keep Your Newspapers Forever in Fashion
+[D] Cherish the Newspaper Still in Your Hand</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text and answer the questions by choosing the most suitable subheading from the list A-G for each of the numbered paragraphs (41-45). There are two extra subheadings. Mark your answers on the ANSWER SHEET. (10 points)</p>
+<p>[A] Create a new image of yourself
+[B] Have confidence in yourself
+[C] Decide if the time is right
+[D] Understand the context
+[E] Work with professionals
+[F] Know your goals
+[G] Make it efficient</p>
+<p>No matter how formal or informal the work environment, the way you present yourself has an impact. This is especially true in first impressions. According to research from Princeton University, people assess your competence, trustworthiness, and likeability in just a tenth of a second, solely based on the way you look.</p>
+<p>The difference between today's workplace and the “dress for success” era is that the range of options is so much broader. Norms have evolved and fragmented. In some settings, red sneakers or dress T-shirts can convey status; in others not so much. Plus, whatever image we present is magnified by social-media services like LinkedIn. Chances are, your headshots are seen much more often now than a decade or two ago. Millennials, it seems, face the paradox of being the least formal generation yet the most conscious of style and personal branding. It can be confusing.</p>
+<p>So how do we navigate this? How do we know when to invest in an upgrade? And what's the best way to pull off one that enhances our goals? Here are some tips:</p>
+<p><strong>41.</strong>
+As an executive coach, I've seen image upgrades be particularly helpful during transitions – when looking for a new job, stepping into a new or more public role, or changing work environments. If you're in a period of change or just feeling stuck and in a rut, now may be a good time. If you're not sure, ask for honest feedback from trusted friends, colleagues and professionals. Look for cues about how others perceive you. Maybe there's no need for an upgrade and that's OK.</p>
+<p><strong>42.</strong>
+Get clear on what impact you're hoping to have. Are you looking to refresh your image or pivot it? For one person, the goal may be to be taken more seriously and enhance their professional image. For another, it may be to be perceived as more approachable, or more modern and stylish. For someone moving from finance to advertising, maybe they want to look more “SoHo.” (It's OK to use characterizations like that.)</p>
+<p><strong>43.</strong>
+Look at your work environment like an anthropologist. What are the norms of your environment? What conveys status? Who are your most important audiences? How do the people you respect and look up to present themselves? The better you understand the cultural context, the more control you can have over your impact.</p>
+<p><strong>44.</strong>
+Enlist the support of professionals and share with them your goals and context. Hire a personal stylist, or use the free styling service of a store like J.Crew. Try a hair stylist instead of a barber. Work with a professional photographer instead of your spouse or friend. It's not as expensive as you might think.</p>
+<p><strong>45.</strong>
+The point of a style upgrade isn't to become more vain or to spend more time fussing over what to wear. Instead, use it as an opportunity to reduce decision fatigue. Pick a standard work uniform or a few go-to options. Buy all your clothes at once with a stylist instead of shopping alone, one article of clothing at a time.</p>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Your translation should be written neatly on the ANSWER SHEET. (10 points)</p>
+<p>Mental health is our birthright. (46) <u>We don't have to learn how to be mentally healthy; it is built into us in the same way that our bodies know how to heal a cut or mend a broken bone.</u> Mental health can't be learned, only reawakened. It is like the immune system of the body, which under stress or through lack of nutrition or exercise can be weakened, but which never leaves us. When we don't understand the value of mental health and we don't know how to gain access to it, mental health will remain hidden from us. (47) <u>Our mental health doesn't really go anywhere; like the sun behind a cloud, it can be temporarily hidden from view, but it is fully capable of being restored in an instant.</u></p>
+<p>Mental health is the seed that contains self-esteem – confidence in ourselves and an ability to trust in our common sense. It allows us to have perspective on our lives – the ability to not take ourselves too seriously, to laugh at ourselves, to see the bigger picture, and to see that things will work out. It's a form of innate or unlearned optimism. (48) <u>Mental health allows us to view others with sympathy if they are having troubles, with kindness if they are in pain, and with unconditional love no matter who they are.</u> Mental health is the source of creativity for solving problems, resolving conflict, making our surroundings more beautiful, managing our home life, or coming up with a creative business idea or invention to make our lives easier. It gives us patience for ourselves and toward others as well as patience while driving, catching a fish, working on our car, or raising a child. It allows us to see the beauty that surrounds us each moment in nature, in culture, in the flow of our daily lives.</p>
+<p>(49) <u>Although mental health is the cure-all for living our lives, it is perfectly ordinary as you will see that it has been there to direct you through all your difficult decisions.</u> It has been available even in the most mundane of life situations to show you right from wrong, good from bad, friend from foe. Mental health has commonly been called conscience, instinct, wisdom, common sense, or the inner voice. We think of it simply as a healthy and helpful flow of intelligent thought. (50) <u>As you will come to see, knowing that mental health is always available and knowing to trust it allow us to slow down to the moment and live life happily.</u></p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong>
+Suppose you are a librarian in your university. Write a notice of about 100 words, providing the newly-enrolled international students with relevant information about the library.
+You should write neatly on the ANSWER SHEET.
+Do not sign your own name at the end of the notice. Use “Li Ming” instead.
+Do not write the address. (10 points)</p>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong>
+Write an essay of 160-200 words based on the following pictures. In your essay, you should</p>
+<ol>
+<li>describe the pictures briefly,</li>
+<li>interpret the meaning, and</li>
+<li>give your comments.
+You should write neatly on the ANSWER SHEET. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The image consists of two panels under the heading "与其只提要求,不如做个榜样" (It's better to set an example than to just make demands).
+In the first panel, a father is lounging on a sofa watching TV and smoking. He yells at his son, who is sitting at a desk, "儿子,你给我好好学习!" (Son, you'd better study hard for me!).
+In the second panel, the scene has changed. The father is now sitting attentively at a desk, reading a book, while his son sits at another desk, also focused on his studies. A clock on the wall shows that time has passed. The image contrasts two parenting styles, advocating for leading by example rather than just issuing commands.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2015 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2017 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2015 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2017 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

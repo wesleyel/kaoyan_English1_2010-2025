@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2018 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)</p>
+<p>Trust is a tricky business. On the one hand, it’s a necessary condition <span class="long-underline"> 1 </span> many worthwhile things: child care, friendships, etc. On the other hand, putting your <span class="long-underline"> 2 </span> in the wrong place often carries a high <span class="long-underline"> 3 </span>.</p>
+<p><span class="long-underline"> 4 </span> why do we trust at all? Well, because it feels good. <span class="long-underline"> 5 </span> people place their trust in an individual or an institution, their brains release oxytocin, a hormone that <span class="long-underline"> 6 </span> pleasurable feelings and triggers the herding instinct that prompts humans to <span class="long-underline"> 7 </span> with one another. Scientists have found that exposure <span class="long-underline"> 8 </span> this hormone puts us in a trusting <span class="long-underline"> 9 </span>: In a Swiss study, researchers sprayed oxytocin into the noses of half the subjects; those subjects were ready to lend significantly higher amounts of money to strangers than were their <span class="long-underline"> 10 </span> who inhaled something else.</p>
+<p><span class="long-underline"> 11 </span> for us, we also have a sixth sense for dishonesty that may <span class="long-underline"> 12 </span> us. A Canadian study found that children as young as 14 months can differentiate <span class="long-underline"> 13 </span> a credible person and a dishonest one. Sixty toddlers were each <span class="long-underline"> 14 </span> to an adult tester holding a plastic container. The tester would ask, “What’s in here?” before looking into the container, smiling, and exclaiming, “Wow!” Each subject was then invited to look <span class="long-underline"> 15 </span>. Half of them found a toy; the other half <span class="long-underline"> 16 </span> the container was empty – and realized the tester had <span class="long-underline"> 17 </span> them.</p>
+<p>Among the children who had not been tricked, the majority were <span class="long-underline"> 18 </span> to cooperate with the tester in learning a new skill, demonstrating that they trusted his leadership. <span class="long-underline"> 19 </span>, only five of the 30 children paired with the “<span class="long-underline"> 20 </span>” tester participated in a follow-up activity.</p>
+<ol>
+<li>[‌A] on [B] like [C] for [D] from</li>
+<li>[‌A] faith [B] concern [C] attention [D] interest</li>
+<li>[‌A] benefit [B] debt [C] hope [D] price</li>
+<li>[‌A] Therefore [B] Then [C] Instead [D] Again</li>
+<li>[‌A] Until [B] Unless [C] Although [D] When</li>
+<li>[‌A] selects [B] produces [C] applies [D] maintains</li>
+<li>[‌A] consult [B] compete [C] connect [D] compare</li>
+<li>[‌A] at [B] by [C] of [D] to</li>
+<li>[‌A] context [B] mood [C] period [D] circle</li>
+<li>[‌A] counterparts [B] substitutes [C] colleagues [D] supporters</li>
+<li>[‌A] Funny [B] Lucky [C] Odd [D] Ironic</li>
+<li>[‌A] monitor [B] protect [C] surprise [D] delight</li>
+<li>[‌A] between [B] within [C] toward [D] over</li>
+<li>[‌A] transferred [B] added [C] introduced [D] entrusted</li>
+<li>[‌A] out [B] back [C] around [D] inside</li>
+<li>[‌A] discovered [B] proved [C] insisted [D] remembered</li>
+<li>[‌A] betrayed [B] wronged [C] fooled [D] mocked</li>
+<li>[‌A] forced [B] willing [C] hesitant [D] entitled</li>
+<li>[‌A] In contrast [B] As a result [C] On the whole [D] For instance</li>
+<li>[‌A] inflexible [B] incapable [C] unreliable [D] unsuitable</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>Among the annoying challenges facing the middle class is one that will probably go unmentioned in the next presidential campaign: What happens when the robots come for their jobs?</p>
+<p>Don't dismiss that possibility entirely. About half of U.S. jobs are at high risk of being automated, according to a University of Oxford study, with the middle class disproportionately squeezed. Lower-income jobs like gardening or day care don't appeal to robots. But many middle-class occupations – trucking, financial advice, software engineering – have aroused their interest, or soon will. The rich own the robots, so they will be fine.</p>
+<p>This isn't to be alarmist. Optimists point out that technological upheaval has benefited workers in the past. The Industrial Revolution didn't go so well for Luddites whose jobs were displaced by mechanized looms, but it eventually raised living standards and created more jobs than it destroyed. Likewise, automation should eventually boost productivity, stimulate demand by driving down prices, and free workers from hard, boring work. But in the medium term, middle-class workers may need a lot of help adjusting.</p>
+<p>The first step, as Erik Brynjolfsson and Andrew McAfee argue in <em>The Second Machine Age</em>, should be rethinking education and job training. Curriculums – from grammar school to college – should evolve to focus less on memorizing facts and more on creativity and complex communication. Vocational schools should do a better job of fostering problem-solving skills and helping students work alongside robots. Online education can supplement the traditional kind. It could make extra training and instruction affordable. Professionals trying to acquire new skills will be able to do so without going into debt.</p>
+<p>The challenge of coping with automation underlines the need for the U.S. to revive its fading business dynamism: Starting new companies must be made easier. In previous eras of drastic technological change, entrepreneurs smoothed the transition by dreaming up ways to combine labor and machines. The best uses of 3D printers and virtual reality haven't been invented yet. The U.S. needs the new companies that will invent them.</p>
+<p>Finally, because automation threatens to widen the gap between capital income and labor income, taxes and the safety net will have to be rethought. Taxes on low-wage labor need to be cut, and wage subsidies such as the earned income tax credit should be expanded: This would boost incomes, encourage work, reward companies for job creation, and reduce inequality.</p>
+<p>Technology will improve society in ways big and small over the next few years, yet this will be little comfort to those who find their lives and careers upended by automation. Destroying the machines that are coming for our jobs would be nuts. But policies to help workers adapt will be indispensable.</p>
+<ol start="21">
+<li>
+<p>Who will be most threatened by automation?
+[A] Leading politicians.
+[B] Low-wage laborers.
+[C] Robot owners.
+[D] Middle-class workers.</p>
+</li>
+<li>
+<p>Which of the following best represents the author's view?
+[A] Worries about automation are in fact groundless.
+[B] Optimists' opinions on new tech find little support.
+[C] Issues arising from automation need to be tackled.
+[D] Negative consequences of new tech can be avoided.</p>
+</li>
+<li>
+<p>Education in the age of automation should put more emphasis on
+[A] creative potential.
+[B] job-hunting skills.
+[C] individual needs.
+[D] cooperative spirit.</p>
+</li>
+<li>
+<p>The author suggests that tax policies be aimed at
+[A] encouraging the development of automation.
+[B] increasing the return on capital investment.
+[C] easing the hostility between rich and poor.
+[D] preventing the income gap from widening.</p>
+</li>
+<li>
+<p>In this text, the author presents a problem with
+[A] opposing views on it.
+[B] possible solutions to it.
+[C] its alarming impacts.
+[D] its major variations.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>A new survey by Harvard University finds more than two-thirds of young Americans disapprove of President Trump's use of Twitter. The implication is that Millennials prefer news from the White House to be filtered through other sources, not a president's social media platform.</p>
+<p>Most Americans rely on social media to check daily headlines. Yet as distrust has risen toward all media, people may be starting to beef up their media literacy skills. Such a trend is badly needed. During the 2016 presidential campaign, nearly a quarter of web content shared by Twitter users in the politically critical state of Michigan was fake news, according to the University of Oxford. And a survey conducted for BuzzFeed News found 44 percent of Facebook users rarely or never trust news from the media giant.</p>
+<p>Young people who are digital natives are indeed becoming more skillful at separating fact from fiction in cyberspace. A Knight Foundation focus-group survey of young people between ages 14 and 24 found they use “distributed trust" to verify stories. They cross-check sources and prefer news from different perspectives – especially those that are open about any bias. “Many young people assume a great deal of personal responsibility for educating themselves and actively seeking out opposing viewpoints,” the survey concluded.</p>
+<p>Such active research can have another effect. A 2014 survey conducted in Australia, Britain, and the United States by the University of Wisconsin-Madison found that young people's reliance on social media led to greater political engagement.</p>
+<p>Social media allows users to experience news events more intimately and immediately while also permitting them to re-share news as a projection of their values and interests. This forces users to be more conscious of their role in passing along information. A survey by Barna research group found the top reason given by Americans for the fake news phenomenon is “reader error,” more so than made-up stories or factual mistakes in reporting. About a third say the problem of fake news lies in "misinterpretation or exaggeration of actual news” via social media. In other words, the choice to share news on social media may be the heart of the issue. "This indicates there is a real personal responsibility in counteracting this problem," says Roxanne Stone, editor in chief at Barna Group.</p>
+<p>So when young people are critical of an over-tweeting president, they reveal a mental discipline in thinking skills – and in their choices on when to share on social media.</p>
+<ol start="26">
+<li>
+<p>According to Paragraphs 1 and 2, many young Americans cast doubts on
+[A] the justification of the news-filtering practice.
+[B] people's preference for social media platforms.
+[C] the administration's ability to handle information.
+[D] social media as a reliable source of news.</p>
+</li>
+<li>
+<p>The phrase "beef up” (Line 2, Para. 2) is closest in meaning to
+[A] sharpen.
+[B] define.
+[C] boast.
+[D] share.</p>
+</li>
+<li>
+<p>According to the Knight Foundation survey, young people
+[A] tend to voice their opinions in cyberspace.
+[B] verify news by referring to diverse sources.
+[C] have a strong sense of responsibility.
+[D] like to exchange views on “distributed trust”.</p>
+</li>
+<li>
+<p>The Barna survey found that a main cause for the fake news problem is
+[A] readers' outdated values.
+[B] journalists' biased reporting.
+[C] readers' misinterpretation.
+[D] journalists' made-up stories.</p>
+</li>
+<li>
+<p>Which of the following would be the best title for the text?
+[A] A Rise in Critical Skills for Sharing News Online.
+[B] A Counteraction Against the Over-tweeting Trend.
+[C] The Accumulation of Mutual Trust on Social Media.
+[D] The Platforms for Projection of Personal Interests.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>Any fair-minded assessment of the dangers of the deal between Britain's National Health Service (NHS) and DeepMind must start by acknowledging that both sides mean well. DeepMind is one of the leading artificial intelligence (AI) companies in the world. The potential of this work applied to healthcare is very great, but it could also lead to further concentration of power in the tech giants. It is against that background that the information commissioner, Elizabeth Denham, has issued her damning verdict against the Royal Free hospital trust under the NHS, which handed over to DeepMind the records of 1.6 million patients in 2015 on the basis of a vague agreement which took far too little account of the patients' rights and their expectations of privacy.</p>
+<p>DeepMind has almost apologized. The NHS trust has mended its ways. Further arrangements – and there may be many – between the NHS and DeepMind will be carefully scrutinised to ensure that all necessary permissions have been asked of patients and all unnecessary data has been cleaned. There are lessons about informed patient consent to learn. But privacy is not the only angle in this case and not even the most important. Ms Denham chose to concentrate the blame on the NHS trust, since under existing law it “controlled” the data and DeepMind merely “processed” it. But this distinction misses the point that it is processing and aggregation, not the mere possession of bits, that gives the data value.</p>
+<p>The great question is who should benefit from the analysis of all the data that our lives now generate. Privacy law builds on the concept of damage to an individual from identifiable knowledge about them. That misses the way the surveillance economy works. The data of an individual there gains its value only when it is compared with the data of countless millions more.</p>
+<p>The use of privacy law to curb the tech giants in this instance feels slightly maladapted. This practice does not address the real worry. It is not enough to say that the algorithms DeepMind develops will benefit patients and save lives. What matters is that they will belong to a private monopoly which developed them using public resources. If software promises to save lives on the scale that drugs now can, big data may be expected to behave as a big pharma has done. We are still at the beginning of this revolution and small choices now may turn out to have gigantic consequences later. A long struggle will be needed to avoid a future of digital feudalism. Ms Denham's report is a welcome start.</p>
+<ol start="31">
+<li>
+<p>What is true of the agreement between the NHS and DeepMind?
+[A] It caused conflicts among tech giants.
+[B] It failed to pay due attention to patients' rights.
+[C] It fell short of the latter's expectations.
+[D] It put both sides into a dangerous situation.</p>
+</li>
+<li>
+<p>The NHS trust responded to Denham's verdict with
+[A] empty promises.
+[B] tough resistance.
+[C] necessary adjustments.
+[D] sincere apologies.</p>
+</li>
+<li>
+<p>The author argues in Paragraph 2 that
+[A] privacy protection must be secured at all costs.
+[B] leaking patients' data is worse than selling it.
+[C] making profits from patients' data is illegal.
+[D] the value of data comes from the processing of it.</p>
+</li>
+<li>
+<p>According to the last paragraph, the real worry arising from this deal is
+[A] the vicious rivalry among big pharmas.
+[B] the ineffective enforcement of privacy law.
+[C] the uncontrolled use of new software.
+[D] the monopoly of big data by tech giants.</p>
+</li>
+<li>
+<p>The author's attitude toward the application of AI to healthcare is
+[A] ambiguous.
+[B] cautious.
+[C] appreciative.
+[D] contemptuous.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>The U.S. Postal Service (USPS) continues to bleed red ink. It reported a net loss of $5.6 billion for fiscal 2016, the 10th straight year its expenses have exceeded revenue. Meanwhile, it has more than $120 billion in unfunded liabilities, mostly for employee health and retirement costs. There are many reasons this formerly stable federal institution finds itself at the brink of bankruptcy. Fundamentally, the USPS is in a historic squeeze between technological change that has permanently decreased demand for its bread-and-butter product, first-class mail, and a regulatory structure that denies management the flexibility to adjust its operations to the new reality.</p>
+<p>And interest groups ranging from postal unions to greeting-card makers exert self-interested pressure on the USPS's ultimate overseer – Congress - insisting that whatever else happens to the Postal Service, aspects of the status quo they depend on get protected. This is why repeated attempts at reform legislation have failed in recent years, leaving the Postal Service unable to pay its bills except by deferring vital modernization.</p>
+<p>Now comes word that everyone involved – Democrats, Republicans, the Postal Service, the unions and the system's heaviest users – has finally agreed on a plan to fix the system. Legislation is moving through the House that would save USPS an estimated $28.6 billion over five years, which could help pay for new vehicles, among other survival measures. Most of the money would come from a penny-per-letter permanent rate increase and from shifting postal retirees into Medicare. The latter step would largely offset the financial burden of annually pre-funding retiree health care, thus addressing a long-standing complaint by the USPS and its unions.</p>
+<p>If it clears the House, this measure would still have to get through the Senate – where someone is bound to point out that it amounts to the bare, bare minimum necessary to keep the Postal Service afloat, not comprehensive reform. There's no change to collective bargaining at the USPS, a major omission considering that personnel accounts for 80 percent of the agency's costs. Also missing is any discussion of eliminating Saturday letter delivery. That common-sense change enjoys wide public support and would save the USPS $2 billion per year. But postal special-interest groups seem to have killed it, at least in the House. The emerging consensus around the bill is a sign that legislators are getting frightened about a politically embarrassing short-term collapse at the USPS. It is not, however, a sign that they're getting serious about transforming the postal system for the 21st century.</p>
+<ol start="36">
+<li>
+<p>The financial problem with the USPS is caused partly by
+[A] its unbalanced budget.
+[B] its rigid management.
+[C] the cost for technical upgrading.
+[D] the withdrawal of bank support.</p>
+</li>
+<li>
+<p>According to Paragraph 2, the USPS fails to modernize itself due to
+[A] the interference from interest groups.
+[B] the inadequate funding from Congress.
+[C] the shrinking demand for postal service.
+[D] the incompetence of postal unions.</p>
+</li>
+<li>
+<p>The long-standing complaint by the USPS and its unions can be addressed by
+[A] removing its burden of retiree health care.
+[B] making more investment in new vehicles.
+[C] adopting a new rate-increase mechanism.
+[D] attracting more first-class mail users.</p>
+</li>
+<li>
+<p>In the last paragraph, the author seems to view legislators with
+[A] respect.
+[B] tolerance.
+[C] discontent.
+[D] gratitude.</p>
+</li>
+<li>
+<p>Which of the following would be the best title for the text?
+[A] The USPS Starts to Miss Its Good Old Days.
+[B] The Postal Service: Keep Away from My Cheese.
+[C] The USPS: Chronic Illness Requires a Quick Cure.
+[D] The Postal Service Needs More Than a Band-Aid.</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> The following paragraphs are given in a wrong order. For Questions 41-45, you are required to reorganize these paragraphs into a coherent article by choosing from the list A-G and filling them into the numbered boxes. Paragraphs C and F have been correctly placed. Mark your answers on the ANSWER SHEET. (10 points)</p>
+<p>[A] In December of 1869, Congress appointed a commission to select a site and prepare plans and cost estimates for a new State Department Building. The commission was also to consider possible arrangements for the War and Navy Departments. To the horror of some who expected a Greek Revival twin of the Treasury Building to be erected on the other side of the White House, the elaborate French Second Empire style design by Alfred Mullett was selected, and construction of a building to house all three departments began in June of 1871.</p>
+<p>[B] Completed in 1875, the State Department's south wing was the first to be occupied, with its elegant four-story library (completed in 1876), Diplomatic Reception Room, and Secretary's office decorated with carved wood, Oriental rugs, and stenciled wall patterns. The Navy Department moved into the east wing in 1879, where elaborate wall and ceiling stenciling and marquetry floors decorated the office of the Secretary.</p>
+<p>[C] The State, War, and Navy Building, as it was originally known, housed the three Executive Branch Departments most intimately associated with formulating and conducting the nation's foreign policy in the last quarter of the nineteenth century and the first quarter of the twentieth century – the period when the United States emerged as an international power. The building has housed some of the nation's most significant diplomats and politicians and has been the scene of many historic events.</p>
+<p>[D] Many of the most celebrated national figures have participated in historical events that have taken place within the EEOB's granite walls. Theodore and Franklin D. Roosevelt, William Howard Taft, Dwight D. Eisenhower, Lyndon B. Johnson, Gerald Ford, and George H. W. Bush all had offices in this building before becoming president. It has housed 16 Secretaries of the Navy, 21 Secretaries of War, and 24 Secretaries of State. Winston Churchill once walked its corridors and Japanese emissaries met here with Secretary of State Cordell Hull after the bombing of Pearl Harbor.</p>
+<p>[E] The Eisenhower Executive Office Building (EEOB) commands a unique position in both the national history and the architectural heritage of the United States. Designed by Supervising Architect of the Treasury, Alfred B. Mullett, it was built from 1871 to 1888 to house the growing staffs of the State, War, and Navy Departments, and is considered one of the best examples of French Second Empire architecture in the country.</p>
+<p>[F] Construction took 17 years as the building slowly rose wing by wing. When the EEOB was finished, it was the largest office building in Washington, with nearly 2 miles of black and white tiled corridors. Almost all of the interior detail is of cast iron or plaster; the use of wood was minimized to insure fire safety. Eight monumental curving staircases of granite with over 4,000 individually cast bronze balusters are capped by four skylight domes and two stained glass rotundas.</p>
+<p>[G] The history of the EEOB began long before its foundations were laid. The first executive offices were constructed between 1799 and 1820. A series of fires (including those set by the British in 1814) and overcrowded conditions led to the construction of the existing Treasury Building. In 1866, the construction of the North Wing of the Treasury Building necessitated the demolition of the State Department building.</p>
+<ol start="41">
+<li>→ C → 42. → 43. → F → 44. → 45.</li>
+</ol>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. (10 points)</p>
+<p>Shakespeare's lifetime was coincident with a period of extraordinary activity and achievement in the drama. (46) <u>By the date of his birth Europe was witnessing the passing of the religious drama, and the creation of new forms under the incentive of classical tragedy and comedy.</u> These new forms were at first mainly written by scholars and performed by amateurs, but in England, as everywhere else in western Europe, the growth of a class of professional actors was threatening to make the drama popular, whether it should be new or old, classical or medieval, literary or farcical. Court, school, organizations of amateurs, and the traveling actors were all rivals in supplying a widespread desire for dramatic entertainment; and (47) <u>no boy who went to a grammar school could be ignorant that the drama was a form of literature which gave glory to Greece and Rome and might yet bring honor to England.</u></p>
+<p>When Shakespeare was twelve years old the first public playhouse was built in London. For a time literature showed no interest in this public stage. Plays aiming at literary distinction were written for schools or court, or for the choir boys of St.Paul's and the royal chapel, who, however, gave plays in public as well as at court. (48) <u>But the professional companies prospered in their permanent theaters, and university men with literary ambitions were quick to turn to these theaters as offering a means of livelihood.</u> By the time that Shakespeare was twenty-five, Lyly, Peele, and Greene had made comedies that were at once popular and literary; Kyd had written a tragedy that crowded the pit; and Marlowe had brought poetry and genius to triumph on the common stage – where they had played no part since the death of Euripides. (49) <u>A native literary drama had been created, its alliance with the public playhouses established, and at least some of its great traditions had been begun.</u></p>
+<p>The development of the Elizabethan drama for the next twenty-five years is of exceptional interest to students of literary history, for in this brief period we may trace the beginning, growth, blossoming, and decay of many kinds of plays, and of many great careers. We are amazed today at the mere number of plays produced, as well as by the number of dramatists writing at the same time for this London of two hundred thousand inhabitants. (50) <u>To realize how great was the dramatic activity, we must remember further that hosts of plays have been lost, and that probably there is no author of note whose entire work has survived.</u></p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong>
+Write an email to all international experts on campus inviting them to attend the graduation ceremony. In your email you should include time, place and other relevant information about the ceremony.
+You should write about 100 words neatly on the ANSWER SHEET.
+Do not use your own name at the end of the email. Use “Li Ming” instead.
+(10 points)</p>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong>
+Write an essay of 160-200 words based on the picture below. In your essay, you should</p>
+<ol>
+<li>describe the picture briefly,</li>
+<li>interpret the meaning, and</li>
+<li>give your comments.
+You should write neatly on the ANSWER SHEET. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The image is titled "选课进行时" (Course Selection in Progress). It depicts a male student sitting at a computer, which displays a "选课系统" (Course Selection System). The student is contemplating his choices. From the computer screen on the left, options representing challenging but intellectually rewarding courses are shown, with descriptions like "知识新" (New Knowledge), "重创新" (Emphasis on Innovation), and "有难度" (Has Difficulty). On the right, options representing easier courses are shown, with descriptions like "给分高" (High Grades), "易通过" (Easy to Pass), and "作业少" (Less Homework). The image illustrates the common dilemma students face during course selection: choosing between a challenging path that fosters genuine learning and an easier path that promises good grades with less effort.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2017 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2019 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2017 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2019 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

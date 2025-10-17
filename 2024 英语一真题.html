@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2024 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word(s) for each numbered blank and mark A, B, C or D on the ANSWER SHEET. (10 points)</p>
+<p>There's nothing more welcoming than a door opening for you. <span class="long-underline"> 1 </span> the need to be touched to open or close, automatic doors are essential in <span class="long-underline"> 2 </span> disabled access to buildings and helping provide general <span class="long-underline"> 3 </span> to commercial buildings.</p>
+<p>Self-sliding doors began to emerge as a commercial product in 1960 after being invented six years <span class="long-underline"> 4 </span> by Americans Dee Horton and Lew Hewitt. They <span class="long-underline"> 5 </span> as a novelty feature, but as their use has grown, their <span class="long-underline"> 6 </span> have extended within our technologically advanced world. Particularly <span class="long-underline"> 7 </span> in busy locations or during times of emergency, the doors <span class="long-underline"> 8 </span> crowd management by reducing the obstacles put in people's way.</p>
+<p><span class="long-underline"> 9 </span> making access both in and out of buildings easier for people, the difference in the way many of these doors open helps reduce the total area <span class="long-underline"> 10 </span> by them. Automatic doors often open to the side, with the panels sliding across one another. Replacing swing doors, these <span class="long-underline"> 11 </span> smaller buildings to maximise the usable space inside without having to <span class="long-underline"> 12 </span> the way for a large, sticking-out door. There are many different types of automatic door, with each <span class="long-underline"> 13 </span> specific signals to tell them when to open. <span class="long-underline"> 14 </span> these methods differ, the main <span class="long-underline"> 15 </span> remain the same.</p>
+<p>Each automatic door system <span class="long-underline"> 16 </span> the light, sound, weight or movement in their vicinity as a signal to open. Sensor types are chosen to <span class="long-underline"> 17 </span> the different environments they are needed in. <span class="long-underline"> 18 </span>, a busy street might not <span class="long-underline"> 19 </span> a motion-sensored door, as it would constantly be opening for passers-by. A pressure-sensitive mat would be more <span class="long-underline"> 20 </span> to limit the surveyed area.</p>
+<ol>
+<li>[‌A] Through [‌B] Despite [‌C] Besides [‌D] Without</li>
+<li>[‌A] revealing [‌B] demanding [‌C] improving [‌D] tracing</li>
+<li>[‌A] experience [‌B] convenience [‌C] guidance [‌D] reference</li>
+<li>[‌A] previously [‌B] temporarily [‌C] successively [‌D] eventually</li>
+<li>[‌A] held on [‌B] started out [‌C] settled down [‌D] went by</li>
+<li>[‌A] relations [‌B] volumes [‌C] benefits [‌D] sources</li>
+<li>[‌A] useful [‌B] simple [‌C] flexible [‌D] stable</li>
+<li>[‌A] call for [‌B] yield to [‌C] insist on [‌D] act as</li>
+<li>[‌A] As well as [‌B] In terms of [‌C] Thanks to [‌D] Rather than</li>
+<li>[‌A] connected [‌B] shared [‌C] represented [‌D] occupied</li>
+<li>[‌A] allow [‌B] expect [‌C] require [‌D] direct</li>
+<li>[‌A] adopt [‌B] lead [‌C] clear [‌D] change</li>
+<li>[‌A] adapting to [‌B] deriving from [‌C] relying on [‌D] pointing at</li>
+<li>[‌A] Once [‌B] Since [‌C] Unless [‌D] Although</li>
+<li>[‌A] records [‌B] positions [‌C] principles [‌D] reasons</li>
+<li>[‌A] controls [‌B] analyses [‌C] produces [‌D] mixes</li>
+<li>[‌A] decorate [‌B] compare [‌C] protect [‌D] complement</li>
+<li>[‌A] In conclusion [‌B] By contrast [‌C] For example [‌D] Above all</li>
+<li>[‌A] identify [‌B] suit [‌C] secure [‌D] include</li>
+<li>[‌A] appropriate [‌B] obvious [‌C] impressive [‌D] delicate</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions after each text by choosing A, B, C or D. Mark your answers on the ANSWER SHEET. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>Nearly 2,000 years ago, as the Romans began to pull out of Scotland, they left behind a curious treasure: 10 tons of nails, nearly a million of the things. The nail hoard was discovered in 1960 in a four-metre-deep pit covered by two metres of gravel.</p>
+<p>Why had the Romans buried a million nails? The likely explanation is that the withdrawal was rushed, and they didn't want the local Caledonians getting their hands on 10 tons of weapon-grade iron. The Romans buried the nails so deep that they would not be discovered for almost two millennia.</p>
+<p>Later civilisations would value the skilled blacksmith's labour in a nail even more than the raw material. As Roma Agrawal explains in her new delightful book <em>Nuts and Bolts</em>, early 17th-century Virginians would sometimes burn down their homes if they were planning to relocate. This was an attempt to recover the valuable nails, which could be reused after sifting the ashes. The idea that one might burn down an entire house just to reclaim the nails underlines how scarce, costly and valuable the simple- seeming technology was.</p>
+<p>The price of nails fell by 90% between the late 1700s and mid-1900s, as economist Daniel Sichel points out in a research paper. According to Sichel, although the falling price of nails was driven partly by cheaper iron and cheaper energy, most of the credit goes to nail manufacturers who simply found more efficient ways to turn steel into nails.</p>
+<p>Nails themselves have changed over the years, but Sichel studied them because they haven't changed much. Roman lamps and Roman chariots are very different from LED strips and sports cars, but Roman nails are still clearly nails. It would be absurd to try to track the changing price of sports cars since 1695, but to ask the same question of nails makes perfect sense.</p>
+<p>I make no apology for being obsessed by a particular feature of everyday objects: their price. I am an economist, after all. After writing two books about the history of inventions, one thing I've learnt is that while it is the enchantingly sophisticated technologies that get all the hype, it's the cheap technologies that change the world.</p>
+<p>The Gutenberg printing press transformed civilisation not by changing the nature of writing but by changing its cost—and it would have achieved little without a parallel collapse in the price of surfaces to write on, thanks to an often-overlooked technology called paper. Solar panels had a few niche uses until they became cheap; now they are transforming the global energy system.</p>
+<ol start="21">
+<li>
+<p>The Romans buried the nails probably for the sake of __________.
+[A] saving them for future use
+[B] keeping them from rusting
+[C] letting them grow in value
+[D] hiding them from the locals</p>
+</li>
+<li>
+<p>The example of early 17th-century Virginians is used to __________.
+[A] highlight the thriftiness of early American colonists
+[B] illustrate the high status of blacksmiths in that period
+[C] contrast the attitudes of different civilisations towards nails
+[D] show the preciousness of nail-making technology at that time</p>
+</li>
+<li>
+<p>What played the major role in lowering the price of nails after the late 1700s?
+[A] Increased productivity.
+[B] Wider use of new energies.
+[C] Fiercer market competition.
+[D] Reduced cost of raw materials.</p>
+</li>
+<li>
+<p>It can be learned from Paragraph 5 that nails __________.
+[A] have undergone many technological improvements
+[B] have remained basically the same since Roman times
+[C] are less studied than other everyday products
+[D] are one of the world's most significant inventions</p>
+</li>
+<li>
+<p>Which of the following best summarises the last two paragraphs?
+[A] Cheap technologies bring about revolutionary change.
+[B] Technological innovation is integral to economic success.
+[C] Technology defines people's understanding of the world.
+[D] Sophisticated technologies develop from small inventions.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>Parenting tips obtained from hunter-gatherers in Africa may be the key to bringing up more contented children, researchers have suggested. The idea is based on studies of communities such as the Kung of Botswana, where each child is cared for by many adults. Kung children as young as four will help to look after younger ones and “baby-wearing”, in which infants are carried in slings, is considered the norm.</p>
+<p>According to Dr Nikhil Chaudhary, an evolutionary anthropologist at Cambridge University, these practices, known as alloparenting, could lead to less anxiety for children and parents.</p>
+<p>Dr Annie Swanepoel, a child psychiatrist, believes that there are ways to incorporate them into western life. In Germany, one scheme has paired an old people's home with a nursery. The residents help to look after the children, an arrangement akin to alloparenting. Another measure could be encouraging friendships between children in different school years to mirror the unsupervised mixed-age playgroups in hunter-gatherer communities.</p>
+<p>In a paper published in the <em>Journal of Child Psychology and Psychiatry</em>, researchers said that the western nuclear family was a recent invention which broke with evolutionary history. This abrupt shift to an “intensive mothering narrative”, which suggests that mothers should manage childcare alone, was likely to have been harmful. “Such narratives can lead to maternal exhaustion and have dangerous consequences,” they wrote.</p>
+<p>By contrast, in hunter-gatherer societies adults other than the parents can provide almost half of a child's care. One previous study looked at the Efé people of the Democratic Republic of Congo. It found that infants had an average of 14 alloparents a day by the time they were 18 weeks old and were passed between caregivers eight times an hour.</p>
+<p>Chaudhary said that parents now had less childcare support from family and social networks than during most of humans' evolutionary history, but introducing additional caregivers could reduce stress and maternal depression, which could have a “knock-on” benefit to a child's wellbeing. An infant born to a hunter-gatherer society could have more than ten caregivers—this contrasts starkly to nursery settings in the UK where regulations call for a ratio of one carer to four children aged two to three.</p>
+<p>While hunter-gatherer children learnt from observation and imitation in mixed-age playgroups, researchers said that western “instructive teaching”, where pupils are asked to sit still, may contribute to conditions such as attention deficit hyperactivity disorder. Chaudhary said that Britain should explore the possibility that older siblings helping their parents “might also enhance their own social development”.</p>
+<ol start="26">
+<li>
+<p>According to the first two paragraphs, alloparenting refers to the practice of __________.
+[A] sharing childcare among community members
+[B] assigning babies to specific adult caregivers
+[C] teaching parenting skills to older children
+[D] carrying infants around by their parents</p>
+</li>
+<li>
+<p>The scheme in Germany is mentioned to illustrate __________.
+[A] an attempt to facilitate intergenerational communication
+[B] an approach to integrating alloparenting into western society
+[C] the conventional parenting style in western culture
+[D] the differences between western and African ways of living</p>
+</li>
+<li>
+<p>According to Paragraph 4, the “intensive mothering narrative” __________.
+[A] alleviates parenting pressures
+[B] consolidates family relationships
+[C] results in the child-centred family
+[D] departs from the course of evolution</p>
+</li>
+<li>
+<p>What can be inferred about the nurseries in the UK?
+[A] They tend to fall short of official requirements.
+[B] They have difficulty finding enough caregivers.
+[C] They ought to improve their carer-to-child ratio.
+[D] They should try to prevent parental depression.</p>
+</li>
+<li>
+<p>Which of the following would be the best title for the text?
+[A] Instructive teaching: a dilemma for anxious parents
+[B] For a happier family, learn from the hunter-gatherers
+[C] Mixed-age playgroup, a better choice for lonely children
+[D] Tracing the history of parenting: from Africa to Europe</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>A Polish digital artist who uses classical painting styles to create dreamy fantasy landscapes, Greg Rutkowski has made illustrations for games such as <em>Dungeons &amp; Dragons</em> and <em>Magic: The Gathering</em>. And he's become a sudden hit in the new world of text-to-image AI generation.</p>
+<p>His distinctive style is now one of the most commonly used prompts in the new open-source AI art generator Stable Diffusion. The tool, along with other popular image-generation AI models, allows anyone to create impressive images based on text prompts. For example, type in “Wizard with sword and a glowing orb of magic fire fights a fierce dragon Greg Rutkowski,” and the system will produce something that looks not a million miles away from works in Rutkowski's style.</p>
+<p>But these open-source programs are built by scraping images from the Internet, often without permission and proper attribution to artists. As a result, they are raising tricky questions about ethics and copyright. And artists like Rutkowski have had enough.</p>
+<p>According to the website Lexica, which tracks over 10 million Stable Diffusion images and prompts, Rutkowski's name has been used as a prompt around 93,000 times. Rutkowski was initially surprised but thought it might be a good way to reach new audiences. Then he tried searching for his name to see if a piece he had worked on had been published. The online search brought back work that had his name attached to it but wasn't his.</p>
+<p>“It's been just a month. What about in a year? I probably won't be able to find my work out there because the Internet will be flooded with AI art,” Rutkowski said. “That's concerning."</p>
+<p>Other artists besides Rutkowski have been surprised by the apparent popularity of their work in text-to-image generators—and some are now fighting back.</p>
+<p>Karla Ortiz, an illustrator based in San Francisco who found her work in Stable Diffusion's data set, has been raising awareness about the issues around AI art and copyright. Artists say they risk losing income as people start using AI-generated images based on copyrighted material for commercial purposes. But it's also a lot more personal, Ortiz says, arguing that because art is so closely linked to a person, it could raise data protection and privacy problems.</p>
+<p>“There is a coalition growing within artist industries to figure out how to tackle or mitigate this," says Ortiz. The group is in its early days of mobilization, which could involve pushing for new policies or regulation. One suggestion is that AI models could be trained on images in the public domain, and AI companies could forge partnerships with museums and artists, Ortiz says.</p>
+<ol start="31">
+<li>
+<p>What can be learned about Rutkowski from the first two paragraphs?
+[A] He is enthusiastic about using AI models.
+[B] He is popular with users of an AI art generator.
+[C] He attracts admiration from other illustrators.
+[D] He specializes in classical painting digitalization.</p>
+</li>
+<li>
+<p>The problem with open-source AI art generators is that they __________.
+[A] lack flexibility in responding to prompts
+[B] produce artworks in unpredictable styles
+[C] make unauthorized use of online images
+[D] collect user information without consent</p>
+</li>
+<li>
+<p>After searching online, Rutkowski found __________.
+[A] a unique way to reach audiences
+[B] a new method to identify AI images
+[C] AI-generated work bearing his name
+[D] heated disputes regarding his copyright</p>
+</li>
+<li>
+<p>According to Ortiz, AI companies are advised to __________.
+[A] campaign for new policies or regulation
+[B] offer their services to public institutions
+[C] strengthen their relationships with AI users
+[D] adopt a different strategy for AI model training</p>
+</li>
+<li>
+<p>What is the text mainly about?
+[A] Artists' responses to AI art generation.
+[B] AI's expanded role in artistic creation.
+[C] Privacy issues in the application of AI.
+[D] Opposing views on AI development.</p>
+</li>
+</ol>
+<hr />
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>The miracle of the Chesapeake Bay lies not in its depths, but in the complexity of its natural construction, the interaction of fresh and saline waters, and the mix of land and water. The shallows provide homes for hundreds of species while storing floodwaters, filtering pollutants from water, and protecting nearby communities from potentially destructive storm surges.</p>
+<p>All this was put at great risk late last month, when the U.S. Supreme Court issued a ruling in an Idaho case that provides the U.S. Environmental Protection Agency (EPA) far less authority to regulate wetlands and waterways. Specifically, a 5-4 majority decided that wetlands protected by the EPA under its Clean Water Act authority must have a “continuous surface connection” to bodies of water. This narrowing of the regulatory scope was a victory for builders, mining operators and other commercial interests often at odds with environmental rules. And it carries “significant repercussions for water quality and flood control throughout the United States," as Justice Brett Kavanaugh observed.</p>
+<p>In Maryland, the good news is that there are many state laws in place that provide wetlands protections. But that's a very shortsighted view, particularly when it comes to the Chesapeake Bay. The reality is that water, and the pollutants that so often come with it, don't respect state boundaries. The Chesapeake draws from a 64,000-square-mile watershed that extends into Virginia, Pennsylvania, New York, West Virginia, the District of Columbia and Delaware. Will those jurisdictions extend the same protections now denied under <em>Sackett v. EPA</em>? Perhaps some, but all? That seems unlikely.</p>
+<p>It is too easy, and misleading, to see such court rulings as merely standing up for the rights of land owners when the consequences can be so dire for their neighbors. And it's a reminder that the EPA's involvement in the Chesapeake Bay Program has long been crucial as the means to transcend the influence of deep-pocketed special interests in neighboring states. Pennsylvania farmers, to use one telling example, aren't thinking about next year's blue crab harvest in Maryland when they decide whether to spread animal waste on their fields, yet the runoff into nearby creeks can have enormous impact downstream.</p>
+<p>And so we would call on state lawmakers from Richmond to Albany to consider reviewing their own wetlands protections and see for themselves the enormous stakes involved. We can offer them a visit to Blackwater National Wildlife Refuge in Dorchester County where bald eagles fly over tidal marshes so shallow you could not paddle a boat across them but teaming with aquatic life. It's worth the scenic drive.</p>
+<ol start="36">
+<li>
+<p>The Chesapeake Bay is described in Paragraph 1 as __________.
+[A] a valuable natural environment
+[B] a controversial conservation area
+[C] a place with commercial potential
+[D] a headache for nearby communities</p>
+</li>
+<li>
+<p>The U.S. Supreme Court's ruling in the Idaho case __________.
+[A] reinforces water pollution control
+[B] weakens the EPA's regulatory power
+[C] will end conflicts among local residents
+[D] may face opposition from mining operators</p>
+</li>
+<li>
+<p>How does the author feel about the future of the Chesapeake Bay?
+[A] Worried.
+[B] Puzzled.
+[C] Relieved.
+[D] Encouraged.</p>
+</li>
+<li>
+<p>What can be inferred about the EPA's involvement in the Chesapeake Bay Program?
+[A] It has restored the balance among neighboring jurisdictions.
+[B] It has triggered a radical reform in commercial fisheries.
+[C] It has set a fine example of respecting state authorities.
+[D] It has ensured the coordination of protection efforts.</p>
+</li>
+<li>
+<p>The author holds that the state lawmakers should __________.
+[A] be cautious about the influence of land owners
+[B] attach due importance to wetlands protections
+[C] recognize the need to expand wildlife refuges
+[D] improve the wellbeing of endangered species</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> Read the following comments on a report about American museums returning artifacts to their countries of origin and a list of statements summarizing the comments. Choose the best statement from the list A-G for each numbered name (41-45). There are two extra choices which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points)</p>
+<p><strong>(41) Hannah</strong> <span class="long-underline"></span></p>
+<p>Simply, there are people in Nigeria who cannot travel to the Smithsonian Institution to see that part of their history and culture represented by the Benin Bronzes. These should be available to them as part of their cultural heritage and history and as a source of national pride. There is no good reason that these artifacts should be beyond the ordinary reach of the educational objectives or inspiration of the generations to which they were left. They serve no purpose in a museum in the United States or elsewhere except as curious objects. They cannot be compared to works of art produced for sale which can be passed from hand to hand and place to place by purchase.</p>
+<p><strong>(42) Buck</strong> <span class="long-underline"></span></p>
+<p>We know very exact reproductions of artwork can be and are regularly produced. Perhaps museums and governments might explore some role for the use of nearly exact reproductions as a means of resolving issues relating to returning works of art and antiquities. The context of any exhibit is more important to me than whether the object being displayed is 2,000 years old or 2 months old. In many cases the experts have a hard time agreeing on what is the real object and what is a forgery. Again, the story an exhibit is trying to tell is what matters. The monetary value of the objects on display is a distant second place in importance.</p>
+<p><strong>(43) Sara</strong> <span class="long-underline"></span></p>
+<p>When visiting the Baltimore Museum of Art, I came across a magnificent 15th-century Chinese sculpture. It inspired me to learn more about the culture that it represented. Artifacts in museums have the power to inspire, and perhaps spark that need to learn and understand the nature of their creators. Having said that, I do feel that whatever artifacts find their way to public museums should, in fact, be sanctioned as having been obtained on loan, legally purchased, or obtained by treaty. Stealing artifacts from other peoples' cultures is obscene; it robs not only the physical objects, but the dignity and spirit of their creators.</p>
+<p><strong>(44) Victor</strong> <span class="long-underline"></span></p>
+<p>Ancient art that is displayed in foreign countries by all means should be returned to the original country. The foreign countries have no right to hold back returning the items. I would ask that the foreign nations and the original country discuss the terms of transfer. Yes, there is the risk that the original country will not have as good security as do the foreign countries. But look at what happened to Boston's Gardner Museum theft in 1990, including the loss of Rembrandt, Vermeer, Manet, and other masterpieces. Nothing is absolutely safe nowhere. And now Climate Change agitators are attacking publicly displayed works in European museums.</p>
+<p><strong>(45) Julia</strong> <span class="long-underline"></span></p>
+<p>To those of you in the comments section who are having strong feelings about artifacts being removed from cities in the U.S. and Britain and returned to their countries of origin, I would ask you to consider why do you think Americans have more of a right to easily access the Benin Bronzes than the people of Nigeria? Why are people who live within a day's drive of London entitled to go and see the Elgin Marbles whenever they want, but the people of Athens aren't? What intrinsic factors make the West a suitable home for these artifacts but preclude them from being preserved and displayed by their countries of origin? If your conclusion is that the West is better able to preserve these artifacts, think about why you're assuming that to be true.</p>
+<p>[‌A] It is clear that the countries of origin have never been compensated for the stolen artifacts.
+[‌B] It is a flawed line of reasoning to argue against returning artifacts to their countries of origin.
+[‌C] Museum visitors can still learn as much from artifacts' copies after the originals are returned.
+[‌D] Reproductions, even if perfectly made, cannot take the place of the authentic objects.
+[‌E] The real value of artifacts can only be recognized in their countries of origin rather than anywhere else.
+[‌F] Ways to get artifacts from other countries must be decent and lawful.
+[‌G] Concern over security is no excuse for refusing to return artifacts to their countries of origin.</p>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Write your answers on the ANSWER SHEET. (10 points)</p>
+<p>“Elephants never forget”—or so they say—and that piece of folklore seems to have some foundation.</p>
+<p>The African savanna elephant, also known as the African bush elephant, is distributed across 37 African countries. They move between a variety of habitats, including forests, grasslands, woodlands, wetlands and agricultural land. (46) <u>They sometimes travel more than sixty miles to find food or water, and are very good at working out where other elephants are—even when they are out of sight.</u> Using tracking devices, researchers have shown that they have “remarkable spatial acuity.” When finding their way to waterholes, they headed off in exactly the right direction, on one occasion from a distance of roughly thirty miles. What is more, they almost always seem to choose the nearest waterhole. (47) <u>The researchers are convinced that the elephants always know precisely where they are in relation to all the resources they need, and can therefore take shortcuts, as well as following familiar routes.</u></p>
+<p>Although the cues used by African elephants for long-distance navigation are not yet understood, smell may well play a part.</p>
+<p>Elephants are very choosy eaters, but until recently little was known about how they selected their food. (48) <u>One possibility was that they merely used their eyes and tried out the plants they found, but that would probably result in a lot of wasted time and energy, not least because their eyesight is actually not very good.</u></p>
+<p>(49) <u>The volatile chemicals produced by plants can be carried a long way, and they are very characteristic: Each plant or tree has its own particular odor signature.</u> What is more, they can be detected even when they are not actually visible. New research suggests that smell is a crucial factor in guiding elephants—and probably other herbivores—to the best food resources.</p>
+<p>The researchers first established what kinds of plant the elephants preferred either to eat or avoid when foraging freely. They then set up a "food station” experiment, in which they gave the elephants a series of choices based only on smell. (50) <u>The experiment showed that elephants may well use smell to identify patches of trees that are good to eat, and secondly to assess the quality of the trees within each patch.</u> Free-ranging elephants presumably also use this information to locate their preferred food.</p>
+<p>Their well-developed hippocampal structures may enable elephants, like rats and people, to construct cognitive maps.</p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong>
+Read the following email from an international student and write a reply.</p>
+<blockquote>
+<p>Dear Li Ming,</p>
+<p>I've got a class assignment to make an oral report on an ancient Chinese scientist, but I'm not sure how to prepare for it. Can you give me some advice? Thank you for your help.</p>
+<p>Yours,
+Paul</p>
+</blockquote>
+<p>Write your answer in about 100 words on the ANSWER SHEET.
+Do not use your own name in your email; use “Li Ming” instead. (10 points)</p>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong>
+Write an essay based on the picture and the chart below. In your essay, you should</p>
+<ol>
+<li>describe the picture and the chart briefly,</li>
+<li>interpret the implied meaning, and</li>
+<li>give your comments.
+Write your answer in 160–200 words on the ANSWER SHEET. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The image consists of two parts. On the left, a picture shows a "市民健身区" (Civic Fitness Area) within a park. Several people are happily exercising, and one young man exclaims, "家门口新建的小公园真不错!" (The new little park at our doorstep is really great!). On the right, a bar chart titled "某市近三年公园数量 (单位:座)" (Number of Parks in a Certain City in the Last Three Years (Unit: parks)) shows a steady increase: 406 parks in 2020, 532 in 2021, and 670 in 2022. The combined image illustrates the value and growth of urban parks and their positive impact on residents' well-being and satisfaction.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2023 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2025 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2023 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2025 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2008 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p><strong>Directions:</strong> Read the following text. Choose the best word (s) for each numbered blank and mark [A], [B], [C] or [D] on ANSWER SHEET 1. (10 points)</p>
+<p>The idea that some groups of people may be more intelligent than others is one of those hypotheses that dare not speak its name. But Gregory Cochran is <span class="long-underline">1</span> to say it anyway. He is that <span class="long-underline">2</span> bird, a scientist who works independently <span class="long-underline">3</span> any institution. He helped popularize the idea that some diseases not <span class="long-underline">4</span> thought to have a bacterial cause were actually infections, which aroused much controversy when it was first suggested.</p>
+<p><span class="long-underline">5</span> he, however, might tremble at the <span class="long-underline">6</span> of what he is about to do. Together with another two scientists, he is publishing a paper which not only <span class="long-underline">7</span> that one group of humanity is more intelligent than the others, but explains the process that has brought this about. The group in <span class="long-underline">8</span> are a particular people originated from central Europe. The process is natural selection.</p>
+<p>This group generally do well in IQ test, <span class="long-underline">9</span> 12-15 points above the <span class="long-underline">10</span> value of 100, and have contributed <span class="long-underline">11</span> to the intellectual and cultural life of the West, as the <span class="long-underline">12</span> of their elites, including several world-renowned scientists, <span class="long-underline">13</span> . They also suffer more often than most people from a number of nasty genetic diseases, such as breast cancer. These facts, <span class="long-underline">14</span> , have previously been thought unrelated. The former has been <span class="long-underline">15</span> to social effects, such as a strong tradition of <span class="long-underline">16</span> education. The latter was seen as a (an) <span class="long-underline">17</span> of genetic isolation. Dr. Cochran suggests that the intelligence and diseases are intimately <span class="long-underline">18</span> . His argument is that the unusual history of these people has<span class="long-underline">19</span> them to unique evolutionary pressures that have resulted in this <span class="long-underline">20</span> state of affairs.</p>
+<ol>
+<li>[A] selected [B] prepared [C] obliged [D] pleased</li>
+<li>[A] unique [B] particular [C] special [D] rare</li>
+<li>[A] of [B] with [C] in [D] against</li>
+<li>[A] subsequently [B] presently [C] previously [D] lately</li>
+<li>[A] Only [B] So [C] Even [D] Hence</li>
+<li>[A] thought [B] sight [C] cost [D] risk</li>
+<li>[A] advises [B] suggests [C] protests [D] objects</li>
+<li>[A] progress [B] fact [C] need [D] question</li>
+<li>[A] attaining [B] scoring [C] reaching [D] calculating</li>
+<li>[A] normal [B] common [C] mean [D] total</li>
+<li>[A] unconsciously [B] disproportionately [C] indefinitely [D] unaccountably</li>
+<li>[A] missions [B] fortunes [C] interests [D] careers</li>
+<li>[A] affirm [B] witness [C] observe [D] approve</li>
+<li>[A] moreover [B] therefore [C] however [D] meanwhile</li>
+<li>[A] given up [B] got over [C] carried on [D] put down</li>
+<li>[A] assessing [B] supervising [C] administering [D] valuing</li>
+<li>[A] development [B] origin [C] consequence [D] instrument</li>
+<li>[A] linked [B] integrated [C] woven [D] combined</li>
+<li>[A] limited [B] subjected [C] converted [D] directed</li>
+<li>[A] paradoxical [B] incompatible [C] inevitable [D] continuous</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<p><strong>Directions:</strong> Read the following four texts. Answer the questions below each text by choosing [A], [B], [C] or [D]. Mark your answers on ANSWER SHEET 1. (40 points)</p>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>While still catching up to men in some spheres of modern life, women appear to be way ahead in at least one undesirable category. “Women are particularly susceptible to developing depression and anxiety disorders in response to stress compared to men,” according to Dr. Yehuda, chief psychiatrist at New York’s Veteran’s Administration Hospital.</p>
+<p>Studies of both animals and humans have shown that sex hormones somehow affect the stress response, causing females under stress to produce more of the trigger chemicals than do males under the same conditions. In several of the studies, when stressed-out female rats had their ovaries (the female reproductive organs) removed, their chemical responses became equal to those of the males.</p>
+<p>Adding to a woman’s increased dose of stress chemicals, are her increased “opportunities” for stress. “It’s not necessarily that women don’t cope as well. It’s just that they have so much more to cope with,” says Dr. Yehuda. “Their capacity for tolerating stress may even be greater than men’s,” she observes, “it’s just that they’re dealing with so many more things that they become worn out from it more visibly and sooner.”</p>
+<p>Dr. Yehuda notes another difference between the sexes. “I think that the kinds of things that women are exposed to tend to be in more of a chronic or repeated nature. Men go to war and are exposed to combat stress. Men are exposed to more acts of random physical violence. The kinds of interpersonal violence that women are exposed to tend to be in domestic situations, by, unfortunately, parents or other family members, and they tend not to be one-shot deals. The wear-and-tear that comes from these longer relationships can be quite devastating.”</p>
+<p>Adeline Alvarez married at 18 and gave birth to a son, but was determined to finish college. “I struggled a lot to get the college degree. I was living in so much frustration that that was my escape, to go to school, and get ahead and do better.” Later, her marriage ended and she became a single mother. “It’s the hardest thing to take care of a teenager, have a job, pay the rent, pay the car payment, and pay the debt.I lived from paycheck to paycheck.”</p>
+<p>Not everyone experiences the kinds of severe chronic stresses Alvarez describes. But most women today are coping with a lot of obligations, with few breaks, and feeling the strain. Alvarez’s experience demonstrates the importance of finding ways to diffuse stress before it threatens your health and your ability to function.</p>
+<ol start="21">
+<li>
+<p>Which of the following is true according to the first two paragraphs?
+[A] Women are biologically more vulnerable to stress.
+[B] Women are still suffering much stress caused by men.
+[C] Women are more experienced than men in coping with stress.
+[D] Men and women show different inclinations when faced with stress.</p>
+</li>
+<li>
+<p>Dr. Yehuda’s research suggests that women .
+[A] need extra doses of chemicals to handle stress
+[B] have limited capacity for tolerating stress
+[C] are more capable of avoiding stress
+[D] are exposed to more stress</p>
+</li>
+<li>
+<p>According to Paragraph 4, the stress women confront tends to be .
+[A] domestic and temporary
+[B] irregular and violent
+[C] durable and frequent
+[D] trivial and random</p>
+</li>
+<li>
+<p>The sentence “I lived from paycheck to paycheck.” (Line 5, Para. 5) shows that .
+[A] Alvarez cared about nothing but making money
+[B] Alvarez’s salary barely covered her household expenses
+[C] Alvarez got paychecks from different jobs
+[D] Alvarez paid practically everything by check</p>
+</li>
+<li>
+<p>Which of the following would be the best title for the text?
+[A] Strain of Stress: No Way Out?
+[B] Response to Stress: Gender Difference
+[C] Stress Analysis: What Chemicals Say?
+[D] Gender Inequality: Women Under Stress</p>
+</li>
+</ol>
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>It used to be so straightforward. A team of researchers working together in the laboratory would submit the results of their research to a journal. A journal editor would then remove the author’s names and affiliations from the paper and send it to their peers for review. Depending on the comments received, the editor would accept the paper for publication or decline it. Copyright rested with the journal publisher, and researchers seeking knowledge of the results would have to subscribe to the journal.</p>
+<p>No longer. The Internet—and pressure from funding agencies, who are questioning why commercial publishers are making money from government–funded research by restricting access to it—is making access to scientific results a reality. The Organization for Economic Co-operation and Development (OECD) has just issued a report describing the far-reaching consequences of this. The report, by John Houghton of Victoria University in Australia and Graham Vickery of the OECD, makes heavy reading for publishers who have, so far, made handsome profits. But it goes further than that. It signals a change in what has, until now, been a key element of scientific endeavor.</p>
+<p>The value of knowledge and the return on the public investment in research depends, in part, upon wide distribution and ready access. It is big business. In America, the core scientific publishing market is estimated at between $7 billion and $11 billion. The International Association of Scientific, Technical and Medical Publishers says that there are more than 2,000 publishers worldwide specializing in these subjects. They publish more than 1.2 million articles each year in some 16,000 journals.</p>
+<p>This is now changing. According to the OECD report, some 75% of scholarly journals are now online. Entirely new business models are emerging; three main ones were identified by the report’s authors. There is the so-called big deal, where institutional subscribers pay for access to a collection of online journal titles through site-licensing agreements. There is open-access publishing, typically supported by asking the author (orhis employer) to pay for the paper to be published. Finally, there are open-access archives, where organizations such as universities or international laboratories support institutional repositories. Other models exist that are hybrids of these three, such as delayed open-access, where journals allow only subscribers to read a paper for the first six months, before making it freely available to everyone who wishes to see it. All this could change the traditional form of the peer-review process, at least for the publication of papers.</p>
+<ol start="26">
+<li>
+<p>In the first paragraph, the author discusses .
+[A] the background information of journal editing
+[B] the publication routine of laboratory reports
+[C] the relations of authors with journal publishers
+[D] the traditional process of journal publication</p>
+</li>
+<li>
+<p>Which of the following is true of the OECD report?
+[A] It criticizes government-funded research.
+[B] It introduces an effective means of publication.
+[C] It upsets profit-making journal publishers.
+[D] It benefits scientific research considerably.</p>
+</li>
+<li>
+<p>According to the text, online publication is significant in that .
+[A] it provides an easier access to scientific results
+[B] it brings huge profits to scientific researchers
+[C] it emphasizes the crucial role of scientific knowledge
+[D] it facilitates public investment in scientific research</p>
+</li>
+<li>
+<p>With the open-access publishing model, the author of a paper is required to .
+[A] cover the cost of its publication
+[B] subscribe to the journal publishing it
+[C] allow other online journals to use it freely
+[D] complete the peer-review before submission</p>
+</li>
+<li>
+<p>Which of the following best summarizes the text?
+[A] The Internet is posing a threat to publishers.
+[B] A new mode of publication is emerging.
+[C] Authors welcome the new channel for publication.
+[D] Publication is rendered easily by online service.</p>
+</li>
+</ol>
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>In the early 1960s Wilt Chamberlain was one of the only three players in the National Basketball Association (NBA) listed at over seven feet. If he had played last season, however, he would have been one of 42. The bodies playing major professional sports have changed dramatically over the years, and managers have been more than willing to adjust team uniforms to fit the growing numbers of bigger, longer frames.</p>
+<p>The trend in sports, though, may be obscuring an unrecognized reality: Americans have generally stopped growing. Though typically about two inches taller now than 140 years ago, today’s people—especially those born to families who have lived in the U.S. for many generations—apparently reached their limit in the early 1960s.And they aren’t likely to get any taller. “In the general population today, at this genetic, environmental level, we’ve pretty much gone as far as we can go,” says anthropologist William Cameron Chumlea of Wright State University. In the case of NBA players, their increase in height appears to result from the increasingly common practice of recruiting players from all over the world.</p>
+<p>Growth, which rarely continues beyond the age of 20, demands calories and nutrients—notably, protein—to feed expanding tissues. At the start of the 20th century, under-nutrition and childhood infections got in the way. But as diet and health improved, children and adolescents have, on average, increased in height by about an inch and a half every 20 years, a pattern known as the secular trend in height. Yet according to the Centers for Disease Control and Prevention, average height—5'9" for men, 5'4" for women—hasn’t really changed since 1960.</p>
+<p>Genetically speaking, there are advantages to avoiding substantial height. During childbirth, larger babies have more difficulty passing through the birth canal. Moreover, even though humans have been upright for millions of years, our feet and back continue to struggle with bipedal posture and cannot easily withstand repeated strain imposed by oversize limbs. “There are some real constraints that are set by the genetic architecture of the individual organism,” says anthropologist William Leonard of Northwestern University.</p>
+<p>Genetic maximums can change, but don’t expect this to happen soon. Claire C. Gordon, senior anthropologist at the Army Research Center in Natick, Mass., ensures that 90 percent of the uniforms and workstations fit recruits without alteration. She says that, unlike those for basketball, the length of military uniforms has not changed for some time. And if you need to predict human height in the near future to design a piece of equipment, Gordon says that by and large, “you could use today's data and feel fairly confident.”</p>
+<ol start="31">
+<li>
+<p>Wilt Chamberlain is cited as an example to .
+[A] illustrate the change of height of NBA players
+[B] show the popularity of NBA players in the U.S.
+[C] compare different generations of NBA players
+[D] assess the achievements of famous NBA players</p>
+</li>
+<li>
+<p>Which of the following plays a key role in body growth according to the text?
+[A] Genetic modification.
+[B] Natural environment.
+[C] Living standards.
+[D] Daily exercise.</p>
+</li>
+<li>
+<p>On which of the following statements would the author most probably agree?
+[A] Non-Americans add to the average height of the nation.
+[B] Human height is conditioned by the upright posture.
+[C] Americans are the tallest on average in the world.
+[D] Larger babies tend to become taller in adulthood.</p>
+</li>
+<li>
+<p>We learn from the last paragraph that in the near future .
+[A] the garment industry will reconsider the uniform size
+[B] the design of military uniforms will remain unchanged
+[C] genetic testing will be employed in selecting sportsmen
+[D] the existing data of human height will still be applicable</p>
+</li>
+<li>
+<p>The text intends to tell us that .
+[A] the change of human height follows a cyclic pattern
+[B] human height is becoming even more predictable
+[C] Americans have reached their genetic growth limit
+[D] the genetic pattern of Americans has altered</p>
+</li>
+</ol>
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>In 1784, five years before he became president of the United States, George Washington, 52, was nearly toothless. So he hired a dentist to transplant nine teeth into his jaw—having extracted them from the mouths of his slaves.</p>
+<p>That’s a far different image from the cherry-tree-chopping George most people remember from their history books. But recently, many historians have begun to focus on the role slavery played in the lives of the founding generation. They have been spurred in part by DNA evidence made available in 1998, which almost certainly proved Thomas Jefferson had fathered at least one child with his slave Sally Hemings. And only over the past 30 years have scholars examined history from the bottom up. Works of several historians reveal the moral compromises made by the nation’s early leaders and the fragile nature of the country’s infancy. More significant, they argue that many of the Founding Fathers knew slavery was wrong—and yet most did little to fight it.</p>
+<p>More than anything, the historians say, the founders were hampered by the culture of their time. While Washington and Jefferson privately expressed distaste for slavery, they also understood that it was part of the political and economic bedrock of the country they helped to create.</p>
+<p>For one thing, the South could not afford to part with its slaves. Owning slaves was “like having a large bank account,” says Wiencek, author of An Imperfect God: George Washington, His Slaves, and the Creation of America. The southern states would not have signed the Constitution without protections for the “peculiar institution,” including a clause that counted a slave as three fifths of a man for purposes of congressional representation.</p>
+<p>And the statesmen’s political lives depended on slavery. The three-fifths formula handed Jefferson his narrow victory in the presidential election of 1800 by inflating the votes of the southern states in the Electoral College. Once in office, Jefferson extended slavery with the Louisiana Purchase in 1803; the new land was carved into 13 states, including three slave states.</p>
+<p>Still, Jefferson freed Hemings’s children—though not Hemings herself or his approximately 150 other slaves. Washington, who had begun to believe that all men were created equal after observing the bravary of the black soldiers during the Revolutionary War, overcame the strong opposition of his relatives to grant his slaves their freedom in his will. Only a decade earlier, such an act would have required legislative approval in Virginia.</p>
+<ol start="36">
+<li>
+<p>George Washington’s dental surgery is mentioned to .
+[A] show the primitive medical practice in the past.
+[B] demonstrate the cruelty of slavery in his days.
+[C] stress the role of slaves in the U.S. history.
+[D] reveal some unknown aspect of his life.</p>
+</li>
+<li>
+<p>We may infer from the second paragraph that .
+[A] DNA technology has been widely applied to history research.
+[B] in its early days the U.S. was confronted with delicate situations.
+[C] historians deliberately made up some stories of Jefferson’s life.
+[D] political compromises are easily found throughout the U.S. history.</p>
+</li>
+<li>
+<p>What do we learn about Thomas Jefferson?
+[A] His political view changed his attitude towards slavery.
+[B] His status as a father made him free the child slaves.
+[C] His attitude towards slavery was complex.
+[D] His affair with a slave stained his prestige.</p>
+</li>
+<li>
+<p>Which of the following is true according to the text?
+[A] Some Founding Fathers benefit politically from slavery.
+[B] Slaves in the old days did not have the right to vote.
+[C] Slave owners usually had large savings accounts.
+[D] Slavery was regarded as a peculiar institution.</p>
+</li>
+<li>
+<p>Washington’s decision to free slaves originated from his .
+[A] moral considerations.
+[B] military experience.
+[C] financial conditions.
+[D] political stand.</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p><strong>Directions:</strong> In the following text, some segments have been removed. For Questions 41-45, choose the most suitable one from the list A-G to fit into each ofthe numbered blanks. There are two extra choices, which do not fit in any of the blanks. Mark your answers on ANSWER SHEET 1. (10 points)</p>
+<p>The time for sharpening pencils, arranging your desk, and doing almost anything else instead of writing has ended. The first draft will appear on the page only if you stop avoiding the inevitable and sit, stand up, or lie down to write. (41)_______________.</p>
+<p>Be flexible. Your outline should smoothly conduct you from one point to the next, but do not permit it to railroad you. If a relevant and important idea occurs to you now, work it into the draft. (42) _______________. Grammar, punctuation, and spelling can wait until you revise. Concentrate on what you are saying. Good writing most often occurs when you are in hot pursuit of an idea rather than in a nervous search for errors.</p>
+<p>(43) _______________. Your pages will be easier to keep track of that way, and, if you have to clip a paragraph to place it elsewhere, you will not lose any writing on either side.</p>
+<p>If you are working on a word processor, you can take advantage of its capacity to make additions and deletions as well as move entire paragraphs by making just a few simple keyboard commands. Some software programs can also check spelling and certain grammatical elements in your writing. (44) _______________. These printouts are also easier to read than the screen when you work on revisions.</p>
+<p>Once you have a first draft on paper, you can delete material that is unrelated to your thesis and add material necessary to illustrate your points and make your paper convincing. The student who wrote “The A&amp;P as a State of Mind” wisely dropped a paragraph that questioned whether Sammy displays chauvinistic attitudes toward women. (45) _______________.</p>
+<p>Remember that your initial draft is only that. You should go through the paper many times— and then again—working to substantiate and clarify your ideas. You may even end up with several entire versions of the paper. Rewrite. The sentences within each paragraph should be related to a single topic. Transitions should connect one paragraph to the next so that there are no abrupt or confusing shifts. Awkward or wordy phrasing or unclear sentences and paragraphs should be mercilessly poked and prodded into shape.</p>
+<p>[A] To make revising easier, leave wide margins and extra space between lines so that you can easily add words, sentences and corrections. Write on only one side of the paper.
+[B] After you have already and adequately developed the body of your paper, pay particular attention to the introductory and concluding paragraphs. It’s probably best to write the introduction last, after you know precisely what you are introducing. Concluding paragraphs demand equal attention because they leave the reader with a final impression.
+[C] It’s worth remembering, however, that though a clean copy fresh off a printer may look terrible, it will read only as well as the thinking and writing that have gone into it. Many writers prudently store their data on disks and print their pages each time they finish a draft to avoid losing any material because of power failures or other problems.
+[D] It makes no difference how you write, just so you do. Now that you have developed a topic into a tentative thesis, you can assemble your notes and begin to flesh out whatever outline you have made.
+[E] Although this is an interesting issue, it has nothing to do with the thesis, which explains how the setting influences Sammy’s decision to quit his job. Instead of including that paragraph, she added one that described Lengel’s crabbed response to the girls so that she could lead up to the A &amp; P “policy” he enforces.
+[F] In the final paragraph about the significance of the setting in “A&amp;P” the student brings together the reasons Sammy quit his job by referring to his refusal to accept Lengel’s store policies.
+[G] By using the first draft as a means of thinking about what you want to say, you will very likely discover more than your notes originally suggested. Plenty of good writers don’t use outlines at all but discover ordering principles as they write. Do not attempt to compose a perfectly correct draft the first time around.</p>
+<ol start="41">
+<li><span class="long-underline">     </span> → 42. <span class="long-underline">     </span> → 43. <span class="long-underline">     </span> → 44. <span class="long-underline">     </span> → 45. <span class="long-underline">     </span></li>
+</ol>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p><strong>Directions:</strong> Read the following text carefully and then translate the underlined segments into Chinese. Your translation should be written neatly on ANSWER SHEET 2. (10 points)</p>
+<p>In his autobiography，Darwin himself speaks of his intellectualpowers with extraordinary modesty. He points out that he always experienced much difficulty in expressing himself clearly and concisely, but (46) <u>he believes that this very difficulty may have had the compensating advantage of forcing him to think long and intently about every sentence, and thus enabling him to detect errors in reasoning and in his own observations.</u> He disclaimed the possession of any great quickness of apprehension or wit, such as distinguished Huxley. (47) <u>He asserted, also, that his power to follow a long and purely abstract train of thought was very limited, for which reason he felt certain that he never could have succeeded with mathematics.</u> His memory, too, he described as extensive, but hazy. So poor in one sense was it that he never could remember for more than a few days a single date or a line of poetry. (48) <u>On the other hand, he did not accept as well founded the charge made by some of his critics that, while he was a good observer, he had no power of reasoning.</u> This, he thought, could not be true, because the “Origin of Species” is one long argument from the beginning to the end, and has convinced many able men. No one, he submits, could have written it without possessing some power of reasoning. He was willing to assert that “I have a fair share of invention, and of common sense or judgment, such as every fairly successful lawyer or doctor must have, but not, I believe, in any higher degree.” (49)<u>He adds humbly that perhaps he was “superior to the common run of men in noticing things which easily escape attention, and in observing them carefully.”</u></p>
+<p>Writing in the last year of his life, he expressed the opinion that in two or three respects his mind had changed during the preceding twenty or thirty years. Up to the age of thirty or beyond it poetry of many kinds gave him great pleasure. Formerly, too, pictures had given him considerable, and music very great, delight. In 1881, however, he said: “Now for many years I cannot endure to read a line of poetry. I have also almost lost my taste for pictures or music.” (50) <u>Darwin was convinced that the loss of these tastes was not only a loss of happiness, but might possibly be injurious to the intellect, and more probably to the moral character.</u></p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong></p>
+<p>You have just come back from Canada and found a music CD
+in your luggage that you forgot to return to Bob, your landlord there. Write him a letter to</p>
+<ol>
+<li>make an apology, and</li>
+<li>suggest a solution.
+You should write about 100 words on ANSWER SHEET 2.
+Do not sign your own name at the end of the letter. Use “Li Ming” instead.
+Do not write the address. (10 points)</li>
+</ol>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong></p>
+<p>Write an essay of 160-200 words based on the following drawing. In your essay, you should</p>
+<ol>
+<li>describe the drawing briefly,</li>
+<li>explain its intended meaning, and then</li>
+<li>give your comments.
+You should write neatly on ANSHWER SHEET 2. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The drawing depicts four crutches standing together, forming a supportive structure. Two disabled individuals are running side-by-side, with their arms around each other's shoulders for support. The person on the left is missing their right leg, while the person on the right is missing their left leg. Below the image is a caption that reads, "You have one leg, I have one leg, together we can travel far and wide."</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2007 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2009 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2007 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2009 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

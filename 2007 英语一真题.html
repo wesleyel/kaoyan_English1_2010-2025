@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2007 英语一真题 - 考研英语一真题 2010–2025</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/hardline.css">
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">考研英语一真题 2010–2025</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/wesleyel/kaoyan_English1_2010-2025" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="section-i-use-of-english"><a class="header" href="#section-i-use-of-english"><strong>Section I Use of English</strong></a></h2>
+<p>By 1830, the former Spanish and Portuguese colonies had become independent nations. The roughly 20 million <span class="long-underline">1</span> of these nations looked <span class="long-underline">2</span> to the future. Born in the crisis of the old regime and Iberian colonialism, many of the leaders of independence <span class="long-underline">3</span> the ideals of representative government, careers <span class="long-underline">4</span> to talent, freedom of commerce and trade, the <span class="long-underline">5</span> to private property, and a belief in the individual as the basis of society. <span class="long-underline">6</span> there was a belief that the new nations should be sovereign and independent states, large enough to be economically viable and integrated by a <span class="long-underline">7</span> set of laws.</p>
+<p>On the issue of <span class="long-underline">8</span> of religion and the position of the Church, <span class="long-underline">9</span> , there was less agreement <span class="long-underline">10</span>the leadership. Roman Catholicism had been the state religion and the only one<span class="long-underline">11</span> by the Spanish crown. <span class="long-underline">12</span> most leaders sought to maintain Catholicism <span class="long-underline">13</span> the official religion of the new states, some sought to end the <span class="long-underline">14</span> of other faiths. The defense of the Church became a rallying<span class="long-underline">15</span> for the conservative forces.</p>
+<p>The ideals of the early leaders of independence were often egalitarian, valuing equality of everything. Bolivar had received aid from Haiti and had<span class="long-underline">16</span> in return to abolish slavery in the areas he liberated. By 1854 slavery had been abolished everywhere except Spain’s <span class="long-underline">17</span> colonies. Early promises to end Indian tribute and taxes on people of mixed origin came much <span class="long-underline">18</span>because the new nations still needed the revenue such policies <span class="long-underline">19</span> . Egalitarian sentiments were often tempered by fears that the mass of the population was <span class="long-underline">20</span> self-rule and democracy.</p>
+<ol>
+<li>[A] natives [B] inhabitants [C] peoples [D] individuals</li>
+<li>[A] confusedly [B] cheerfully [C] worriedly [D] hopefully</li>
+<li>[A] shared [B] forgot [C] attained [D] rejected</li>
+<li>[A] related [B] close [C] open [D] devoted</li>
+<li>[A] access [B] succession [C] right [D] return</li>
+<li>[A] Presumably [B] Incidentally [C] Obviously [D] Generally</li>
+<li>[A] unique [B] common [C] particular [D] typical</li>
+<li>[A] freedom [B] origin [C] impact [D] reform</li>
+<li>[A] therefore [B] however [C] indeed [D] moreover</li>
+<li>[A] with [B] about [C] among [D] by</li>
+<li>[A] allowed [B] preached [C] granted [D] funded</li>
+<li>[A] Since [B] If [C] Unless [D] While</li>
+<li>[A] as [B] for [C] under [D] against</li>
+<li>[A] spread [B] interference [C] exclusion [D] influence</li>
+<li>[A] support [B] cry [C] plea [D] wish</li>
+<li>[A] urged [B] intended [C] expected [D] promised</li>
+<li>[A] controlling [B] former [C] remaining [D] original</li>
+<li>[A] slower [B] faster [C] easier [D] tougher</li>
+<li>[A] created [B] produced [C] contributed [D] preferred</li>
+<li>[A] puzzled by [B] hostile to [C]pessimistic about [D] unprepared for</li>
+</ol>
+<hr />
+<h2 id="section-ii-reading-comprehension"><a class="header" href="#section-ii-reading-comprehension"><strong>Section II Reading Comprehension</strong></a></h2>
+<h3 id="part-a"><a class="header" href="#part-a"><strong>Part A</strong></a></h3>
+<h4 id="text-1"><a class="header" href="#text-1"><strong>Text 1</strong></a></h4>
+<p>If you were to examine the birth certificates of every soccer player in 2006’s World Cup tournament, you would most likely find a noteworthy quirk: elite soccer players are more likely to have been born in the earlier months of the year than in the late months. If you then examined the European national youth teams that feed the World Cup and professional ranks, you would find this strange phenomenon to be ever more pronounced.</p>
+<p>What might account for this strange phenomenon? Here are a few guesses: a) certain astrological signs confer superior soccer skills; b) winter-born babies tend to have higher oxygen capacity, which increases soccer stamina; c) soccer-mad parents are more likely to conceive children in springtime, at the annual peak of soccer mania; d) none of the above.</p>
+<p>Anders Ericsson, a 58-year-old psychology professor at Florida State University, says he believes strongly in “none of the above.” Ericsson grew up in Sweden, and studied nuclear engineering until he realized he would have more opportunity to conduct his own research if he switched to psychology. His first experiment, nearly 30 years ago, involved memory: training a person to hear and then repeat a random series of numbers. “With the first subject, after about 20 hours of training, his digit span had risen from 7 to 20,” Ericsson recalls. “He kept improving, and after about 200 hours of training he had risen to over 80 numbers.”</p>
+<p>This success, coupled with later research showing that memory itself is not genetically determined, led Ericsson to conclude that the act of memorizing is more of a cognitive exercise than an intuitive one. In other words, whatever inborn differences two people may exhibit in their abilities to memorize, those differences are swamped by how well each person “encodes” the information. And the best way to learn how to encode information meaningfully, Ericsson determined, was a process known as deliberate practice. Deliberate practice entails more than simply repeating a task. Rather, it involves setting specific goals, obtaining immediate feedback and concentrating as much on technique as on outcome.</p>
+<p>Ericsson and his colleagues have thus taken to studying expert performers in a wide range of pursuits, including soccer. They gather all the data they can, not just performance statistics and biographical details but also the results of their own laboratory experiments with high achievers. Their work makes a rather startling assertion: the trait we commonly call talent is highly overrated. Or, put another way, expert performers—whether in memory or surgery, ballet or computer programming—are nearly always made, not born.</p>
+<ol start="21">
+<li>
+<p>The birthday phenomenon found among soccer players is mentioned to
+[A] stress the importance of professional training.
+[B] spotlight the soccer superstars at the World Cup.
+[C] introduce the topic of what makes expert performance.
+[D] explain why some soccer teams play better than others.</p>
+</li>
+<li>
+<p>The word “mania” (Line 4, Paragraph 2) most probably means
+[A] fun.
+[B] craze.
+[C] hysteria.
+[D] excitement.</p>
+</li>
+<li>
+<p>According to Ericsson, good memory
+[A] depends on meaningful processing of information.
+[B] results from intuitive rather than cognitive exercises.
+[C] is determined by genetic rather than psychological factors.
+[D] requires immediate feedback and a high degree of concentration.</p>
+</li>
+<li>
+<p>Ericsson and his colleagues believe that
+[A] talent is a dominating factor for professional success.
+[B] biographical data provide the key to excellent performance.
+[C] the role of talent tends to be overlooked.
+[D] high achievers owe their success mostly to nurture.</p>
+</li>
+<li>
+<p>Which of the following proverbs is closest to the message the text tries to convey?
+[A] “Faith will move mountains.”
+[B] “One reaps what one sows.”
+[C] “Practice makes perfect.”
+[D] “Like father, like son.”</p>
+</li>
+</ol>
+<h4 id="text-2"><a class="header" href="#text-2"><strong>Text 2</strong></a></h4>
+<p>For the past several years, the Sunday newspaper supplement Parade has featured a column called “Ask Marilyn.” People are invited to query Marilyn vos Savant, who at age 10 had tested at a mental level of someone about 23 years old; that gave her an IQ of 228—the highest score ever recorded. IQ tests ask you to complete verbal and visual analogies, to envision paper after it has been folded and cut, and to deduce numerical sequences, among other similar tasks. So it is a bit confusing when vos Savant fields such queries from the average Joe (whose IQ is 100) as, What’s the difference between love and fondness? Or what is the nature of luck and coincidence? It’s not obvious how the capacity to visualize objects and to figure out numerical patterns suits one to answer questions that have eluded some of the best poets and philosophers.</p>
+<p>Clearly, intelligence encompasses more than a score on a test. Just what does it mean to be smart? How much of intelligence can be specified, and how much can we learn about it from neurology, genetics, computer science and other fields?</p>
+<p>The defining term of intelligence in humans still seems to be the IQ score, even though IQ tests are not given as often as they used to be. The test comes primarily in two forms: the Stanford-Binet Intelligence Scale and the Wechsler Intelligence Scales (both come in adult and children’s version). Generally costing several hundred dollars, they are usually given only by psychologists, although variations of them populate bookstores and the World Wide Web. Superhigh scores like vos Savant’s are no longer possible, because scoring is now based on a statistical population distribution among age peers, rather than simply dividing the mental age by the chronological age and multiplying by 100. Other standardized tests, such as the Scholastic Assessment Test (SAT) and the Graduate Record Exam (GRE), capture the main aspects of IQ tests.</p>
+<p>Such standardized tests may not assess all the important elements necessary to succeed in school and in life, argues Robert J. Sternberg. In his article “How Intelligent Is Intelligence Testing?”, Sternberg notes that traditional tests best assess analytical and verbal skills but fail to measure creativity and practical knowledge, components also critical to problem solving and life success. Moreover, IQ tests do not necessarily predict so well once populations or situations change. Research has found that IQ predicted leadership skills when the tests were given under low-stress conditions, but under high-stress conditions, IQ was negatively correlated with leadership—that is, it predicted the opposite. Anyone who has toiled through SAT will testify that test-taking skill also matters, whether it’s knowing when to guess or what questions to skip.</p>
+<ol start="26">
+<li>
+<p>Which of the following may be required in an intelligence test?
+[A] Answering philosophical questions.
+[B] Folding or cutting paper into different shapes.
+[C] Telling the differences between certain concepts.
+[D] Choosing words or graphs similar to the given ones.</p>
+</li>
+<li>
+<p>What can be inferred about intelligence testing from Paragraph3?
+[A] People no longer use IQ scores as an indicator of intelligence.
+[B] More versions of IQ tests are now available on the Internet.
+[C] The test contents and formats for adults and children may be different.
+[D] Scientists have defined the important elements of human intelligence.</p>
+</li>
+<li>
+<p>People nowadays can no longer achieve IQ scores as high as vos Savant’s because
+[A] the scores are obtained through different computational procedures.
+[B] creativity rather than analytical skills is emphasized now.
+[C] vos Savant’s case is an extreme one that will not repeat.
+[D] the defining characteristic of IQ tests has changed.</p>
+</li>
+<li>
+<p>We can conclude from the last paragraph that
+[A] test scores may not be reliable indicators of one’s ability.
+[B] IQ scores and SAT results are highly correlated.
+[C] testing involves a lot of guesswork.
+[D] traditional tests are out of date.</p>
+</li>
+<li>
+<p>What is the author’s attitude towards IQ tests?
+[A] Supportive.
+[B] Skeptical.
+[C] Impartial.
+[D] Biased.</p>
+</li>
+</ol>
+<h4 id="text-3"><a class="header" href="#text-3"><strong>Text 3</strong></a></h4>
+<p>During the past generation, the American middle-class family that once could count on hard work and fair play to keep itself financially secure has been transformed by economic risk and new realties. Now a pink slip, a bad diagnosis, or a disappearing spouse can reduce a family from solidly middle class to newly poor in a few months.</p>
+<p>In just one generation, millions of mothers have gone to work,transforming basic family economics. Scholars, policymakers, and critics of all stripes have debated the social implications of these changes, but few have looked at the side effect: family risk has risen as well. Today’s families have budgeted to the limits of theirs new two-paycheck status. As a result, they have lost the parachute they once had in times of financial setback—a back-up earner (usually Mom) who could go into the workforce if the primary earner got laid off or fell sick. This “added-worker effect” could support the safety net offered by unemployment insurance or disability insurance to help families weather bad times. But today, a disruption to family fortunes can no longer be made up with extra income from an otherwise-stay-at-home partner.</p>
+<p>During the same period, families have been asked to absorb much more risk in their retirement income. Steelworkers, airline employees, and now those in the auto industry are joining millions of families who must worry about interest rates, stock market fluctuation, and the harsh reality that they may outlive their retirement money. For much of the past year, President Bush campaigned to move Social Security to a savings-account model, with retirees trading much or all of their guaranteed payments for payments depending on investment returns. For younger families, the picture is not any better. Both the absolute cost of healthcare and the share of it borne by families have risen—and newly fashionable health-savings plans are spreading from legislative halls to Wal-Mart workers, with much higher deductibles and a large new dose of investment risk for families’ future healthcare. Even demographics are working against the middle class family, as the odds of having a weak elderly parent—and all the attendant need for physical and financial assistance—have jumped eightfold in just one generation.</p>
+<p>From the middle-class family perspective, much of this, understandably, looks far less like an opportunity to exercise more financial responsibility, and a good deal more like a frightening acceleration of the wholesale shift of financial risk onto their already overburdened shoulders. The financial fallout has begun, and the political fallout may not be far behind.</p>
+<ol start="31">
+<li>
+<p>Today’s double-income families are at greater financial risk in that
+[A] the safety net they used to enjoy has disappeared.
+[B] their chances of being laid off have greatly increased.
+[C] they are more vulnerable to changes in family economics.
+[D] they are deprived of unemployment or disability insurance.</p>
+</li>
+<li>
+<p>As a result of President Bush’s reform, retired people may have
+[A] a higher sense of security.
+[B] less secured payments.
+[C] less chance to invest.
+[D] a guaranteed future.</p>
+</li>
+<li>
+<p>According to the author, health-savings plans will
+[A] help reduce the cost of healthcare.
+[B] popularize among the middle class.
+[C] compensate for the reduced pensions.
+[D] increase the families’ investment risk.</p>
+</li>
+<li>
+<p>It can be inferred from the last paragraph that
+[A] financial risks tend to outweigh political risks.
+[B] the middle class may face greater political challenges.
+[C] financial problems may bring about political problems.
+[D] financial responsibility is an indicator of political status.</p>
+</li>
+<li>
+<p>Which of the following is the best title for this text?
+[A] The Middle Class on the Alert
+[B] The Middle Class on the Cliff
+[C] The Middle Class in Conflict
+[D] The Middle Class in Ruins</p>
+</li>
+</ol>
+<h4 id="text-4"><a class="header" href="#text-4"><strong>Text 4</strong></a></h4>
+<p>It never rains but it pours. Just as bosses and boards have finally sorted out their worst accounting and compliance troubles, and improved their feeble corporation governance, a new problem threatens to earn them—especially in America—the sort of nasty headlines that inevitably lead to heads rolling in the executive suite: data insecurity. Left, until now, to odd, low-level IT staff to put right, and seen as a concern only of data-rich industries such as banking, telecoms and air travel, information protection is now high on the boss’s agenda in businesses of every variety.</p>
+<p>Several massive leakages of customer and employee data this year—from organizations as diverse as Time Warner, the American defense contractor Science Applications International Corp and even the University of California, Berkeley—have left managers hurriedly peering into their intricate IT systems and business processes in search of potential vulnerabilities.</p>
+<p>“Data is becoming an asset which needs to be guarded as much as any other asset,” says Haim Mendelson of Stanford University’s business school. “The ability to guard customer data is the key to market value, which the board is responsible for on behalf of shareholders”. Indeed, just as there is the concept of Generally Accepted Accounting Principles (GAAP), perhaps it is time for GASP, Generally Accepted Security Practices, suggested Eli Noam of New York’s Columbia Business School. “Setting the proper investment level for security, redundancy, and recovery is a management issue, not a technical one,” he says.</p>
+<p>The mystery is that this should come as a surprise to any boss. Surely it should be obvious to the dimmest executive that trust, that most valuable of economic assets, is easily destroyed and hugely expensive to restore—and that few things are more likely to destroy trust than a company letting sensitive personal data get into the wrong hands.</p>
+<p>The current state of affairs may have been encouraged—though not justified—by the lack of legal penalty (in America, but not Europe) for data leakage. Until California recently passed a law, American firms did not have to tell anyone, even the victim, when data went astray. That may change fast: lots of proposed data-security legislation is now doing the rounds in Washington, D.C. Meanwhile, the theft of information about some 40 million credit-card accounts in America, disclosed on June 17th, overshadowed a hugely important decision a day earlier by America’s Federal Trade Commission (FTC) that puts corporate America on notice that regulators will act if firms fail to provide adequate data security.</p>
+<ol start="36">
+<li>
+<p>The statement “It never rains but it pours” is used to introduce
+[A] the fierce business competition.
+[B] the feeble boss-board relations.
+[C] the threat from news reports.
+[D] the severity of data leakage.</p>
+</li>
+<li>
+<p>According to Paragraph 2, some organizations check their systems to find out
+[A] whether there is any weak point.
+[B] what sort of data has been stolen.
+[C] who is responsible for the leakage.
+[D] how the potential spies can be located.</p>
+</li>
+<li>
+<p>In bringing up the concept of GASP the author is making the point that
+[A] shareholders’ interests should be properly attended to.
+[B] information protection should be given due attention.
+[C] businesses should enhance their level of accounting security.
+[D] the market value of customer data should be emphasized.</p>
+</li>
+<li>
+<p>According to Paragraph 4, what puzzles the author is that some bosses fail to
+[A] see the link between trust and data protection.
+[B] perceive the sensitivity of personal data.
+[C] realize the high cost of data restoration.
+[D] appreciate the economic value of trust.</p>
+</li>
+<li>
+<p>It can be inferred from Paragraph 5 that
+[A] data leakage is more severe in Europe.
+[B] FTC’s decision is essential to data security.
+[C] California takes the lead in security legislation.
+[D] legal penalty is a major solution to data leakage.</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-b"><a class="header" href="#part-b"><strong>Part B</strong></a></h3>
+<p>Directions:
+You are going to read a list of headings and a text about what parents are supposed to do to guide their children into adulthood. Choose a heading from the list A-G that best fits the meaning of each numbered part of the text (41-45). The first and last paragraphs of the text are not numbered. There are two extra headings that you do not need to use. Mark your answers on ANSWER SHEET 1. (10 points)
+[A] Set a Good Example for Your Kids
+[B] Build Your Kids’ Work Skills
+[C] Place Time Limits on Leisure Activities
+[D] Talk about the Future on a Regular Basis
+[E] Help Kids Develop Coping Strategies
+[F] Help Your Kids Figure Out Who They Are
+[G] Build Your Kids’ Sense of Responsibility</p>
+<p>How Can a Parent Help?
+Mothers and fathers can do a lot to ensure a safe landing in early adulthood for their kids. Even if a job’s starting salary seems too small to satisfy an emerging adult’s need for rapid content, the transition from school to work can be less of a setback if the start-up adult is ready for the move. Here are a few measures, drawn from my book Ready or Not, Here Life Comes, that parents can take to prevent what I call “work-life unreadiness”:</p>
+<ol start="41">
+<li>
+<p><span class="long-underline">     </span>
+You can start this process when they are 11 or 12. Periodically review their emerging strengths and weaknesses with them and work together on any shortcomings, like difficulty in communicating well or collaborating. Also, identify the kinds of interests they keep coming back to, as these offer clues to the careers that will fit them best.</p>
+</li>
+<li>
+<p><span class="long-underline">     </span>
+Kids need a range of authentic role models—as opposed to members of their clique, pop stars and vaunted athletes. Have regular dinner-table discussions about people the family knows and how they got where they are. Discuss the joys and downsides of your own career and encourage your kids to form some ideas about their own future. When asked what they want to do, they should be discouraged from saying “I have no idea.” They can change their minds 200 times, but having only a foggy view of the future is of little good.</p>
+</li>
+<li>
+<p><span class="long-underline">     </span>
+Teachers are responsible for teaching kids how to learn; parents should be responsible for teaching them how to work. Assign responsibilities around the house and make sure homework deadlines are met. Encourage teenagers to take a part-time job. Kids need plenty of practice delaying gratification and deploying effective organizational skills, such as managing time and setting priorities.</p>
+</li>
+<li>
+<p><span class="long-underline">     </span>
+Playing video games encourages immediate content. And hours of watching TV shows with canned laughter only teaches kids to process information in a passive way. At the same time, listening through earphones to the same monotonous beats for long stretches encourages kids to stay inside their bubble instead of pursuing other endeavors. All these activities can prevent the growth of important communication and thinking skills and make it difficult for kids to develop the kind of sustained concentration they will need for most jobs.</p>
+</li>
+<li>
+<p><span class="long-underline">     </span>
+They should know how to deal with setbacks, stress and feelings of inadequacy. They should also learn how to solve problems and resolve conflicts, ways to brainstorm and think critically. Discussions at home can help kids practice doing these things and help them apply these skills to everyday life situations.
+What about the son or daughter who is grown but seems to be struggling and wandering aimlessly through early adulthood? Parents still have a major role to play, but now it is more delicate. They have to be careful not to come across as disappointed in their child. They should exhibit strong interest and respect for whatever currently interests their fledging adult (as naive or ill conceived as it may seem) while becoming a partner in exploring options for the future. Most of all, these new adults must feel that they are respected and supported by a family that appreciates them.</p>
+</li>
+</ol>
+<hr />
+<h3 id="part-c"><a class="header" href="#part-c"><strong>Part C</strong></a></h3>
+<p>The study of law has been recognized for centuries as a basic intellectual discipline in European universities. However, only in recent years has it become a feature of undergraduate programs in Canadian universities. (46) <u>Traditionally, legal learning has been viewed in such institutions as the special preserve of lawyers, rather than a necessary part of the intellectual equipment of an educated person.</u> Happily, the older and more continental view of legal education is establishing itself in a number of Canadian universities and some have even begun to offer undergraduate degrees in law.
+If the study of law is beginning to establish itself as part and parcel of a general education, its aims and methods should appeal directly to journalism educators. Law is a discipline which encourages responsible judgment. On the one hand, it provides opportunities to analyze such ideas as justice, democracy and freedom. (47) <u>On the other, it links these concepts to everyday realities in a manner which is parallel to the links journalists forge on a daily basis as they cover and comment on the news.</u> For example, notions of evidence and fact, of basic rights and public interest are at work in the process of journalistic judgment and production just as in courts of law. Sharpening judgment by absorbing and reflecting on law is a desirable component of a journalist’s intellectual preparation for his or her career.
+(48) <u>But the idea that the journalist must understand the law more profoundly than an ordinary citizen rests on an understanding of the established conventions and special responsibilities of the news media.</u> Politics or, more broadly, the functioning of the state, is a major subject for journalists. The better informed they are about the way the state works, the better their reporting will be. (49) <u>In fact, it is difficult to see how journalists who do not have a clear grasp of the basic features of the Canadian Constitution can do a competent job on political stories.</u>
+Furthermore, the legal system and the events which occur within it are primary subjects for journalists. While the quality of legal journalism varies greatly, there is an undue reliance amongst many journalists on interpretations supplied to them by lawyers. (50) <u>While comment and reaction from lawyers may enhance stories, it is preferable for journalists to rely on their own notions of significance and make their own judgments.</u> These can only come from a well-grounded understanding of the legal system.</p>
+<hr />
+<h2 id="section-iii-writing"><a class="header" href="#section-iii-writing"><strong>Section III Writing</strong></a></h2>
+<h3 id="part-a-1"><a class="header" href="#part-a-1"><strong>Part A</strong></a></h3>
+<p><strong>51. Directions:</strong>
+Write a letter to your university library, making suggestions for improving its service.
+You should write about 100 words on ANSWER SHEET 2.
+Do not sign your own name at the end of the letter. Use “Li Ming” instead.
+Do not write the address. (10 points)</p>
+<h3 id="part-b-1"><a class="header" href="#part-b-1"><strong>Part B</strong></a></h3>
+<p><strong>52. Directions:</strong>
+Write an essay of 160-200 words based on the following drawing. In your essay, you should</p>
+<ol>
+<li>describe the drawing briefly,</li>
+<li>explain its intended meaning, and then</li>
+<li>support your view with an example/examples.
+You should write neatly on ANSWER SHEET 2. (20 points)</li>
+</ol>
+<p><strong>[Image Description]</strong></p>
+<blockquote>
+<p>The drawing depicts a soccer field with a goalkeeper and a shooter. The goalkeeper is thinking that the goal is very big and he is very small, while the shooter is thinking that the goal is very small and the goalkeeper is very big.</p>
+</blockquote>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2006 英语一真题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="2008 英语一真题.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2006 英语一真题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="2008 英语一真题.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
