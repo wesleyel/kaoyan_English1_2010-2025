@@ -17,3 +17,14 @@
 .content .chapter code {
   white-space: pre-wrap;
 }
+
+/* Style for numbered blank spaces in fill-in exercises */
+.long-underline {
+  display: inline-block;
+  min-width: 2em;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding: 0 0.3em;
+  margin: 0 0.2em;
+  font-weight: bold;
+}
